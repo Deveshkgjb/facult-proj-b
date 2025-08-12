@@ -1,0 +1,754 @@
+/* TopBar.css - Enhanced Version */
+:root {
+  --primary: #4361ee;
+  --primary-light: #5a7cff;
+  --primary-dark: #3a56d4;
+  --secondary: #3f37c9;
+  --text: #2b2d42;
+  --text-light: #6c757d;
+  --text-lighter: #8d99ae;
+  --background: #ffffff;
+  --background-dark: #f8f9fa;
+  --background-darker: #e9ecef;
+  --error: #ef233c;
+  --error-light: #ff6b7a;
+  --success: #226478;
+  --success-light: #6ed7f8;
+  --border: #dee2e6;
+  --border-light: #f1f3f5;
+  --shadow-sm: 0 1.0px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 0.286rem 0.429rem rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 0.71rem 1.79rem rgba(0, 0, 0, 0.1);
+  --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Dark Theme Styles */
+[data-theme="dark"] .topbar-navbar {
+  background: linear-gradient(135deg, #0a0e3a 0%, #1a1c4d 100%);
+  border-bottom: 1.0px solid #333;
+}
+
+[data-theme="dark"] .topbar-navbar.topbar-scrolled {
+  background-color: rgba(30, 30, 30, 0.98);
+  box-shadow: 0 0.286rem 0.429rem rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .top-bar-app-name,
+[data-theme="dark"] .top-bar-tagline,
+[data-theme="dark"] .top-bar-logo-icon {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .topbar-user-profile {
+  background-color: #252525;
+}
+
+[data-theme="dark"] .topbar-user-profile:hover {
+  background-color: #333;
+}
+
+[data-theme="dark"] .topbar-username {
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .topbar-dropdown-menu {
+  background-color: #252525;
+  border: 1.0px solid #444;
+}
+
+[data-theme="dark"] .topbar-dropdown-header {
+  background-color: #2d2d2d;
+}
+
+[data-theme="dark"] .topbar-user-fullname {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .topbar-user-email {
+  color: #9e9e9e;
+}
+
+[data-theme="dark"] .topbar-dropdown-item {
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .topbar-dropdown-item:hover {
+  background-color: #333;
+}
+
+[data-theme="dark"] .topbar-dropdown-item.topbar-logout {
+  color: #ef5350;
+}
+
+[data-theme="dark"] .topbar-dropdown-item.topbar-logout:hover {
+  background-color: rgba(239, 83, 80, 0.1);
+}
+
+[data-theme="dark"] .topbar-icon {
+  color: #9e9e9e;
+}
+
+[data-theme="dark"] .topbar-modal-content {
+  background-color: #252525;
+}
+
+[data-theme="dark"] .topbar-modal-header {
+  border-bottom-color: #444;
+}
+
+[data-theme="dark"] .topbar-modal-header h3 {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .topbar-close-btn {
+  color: #9e9e9e;
+}
+
+[data-theme="dark"] .topbar-close-btn:hover {
+  background-color: #333;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .topbar-form-group label {
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .topbar-form-group input {
+  background-color: #333;
+  border-color: #444;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .topbar-form-group input:focus {
+  background-color: #333;
+  border-color: #64b5f6;
+  box-shadow: 0 0 0 0.214rem rgba(100, 181, 246, 0.2);
+}
+
+[data-theme="dark"] .topbar-form-group input::placeholder {
+  color: #757575;
+}
+
+[data-theme="dark"] .topbar-password-strength span {
+  color: #9e9e9e;
+}
+
+[data-theme="dark"] .topbar-message.topbar-success {
+  background-color: rgba(38, 166, 154, 0.1);
+  color: #26a69a;
+  border-color: rgba(38, 166, 154, 0.2);
+}
+
+[data-theme="dark"] .topbar-message.topbar-error {
+  background-color: rgba(239, 83, 80, 0.1);
+  color: #ef5350;
+  border-color: rgba(239, 83, 80, 0.2);
+}
+
+[data-theme="dark"] .topbar-submit-btn {
+  background: linear-gradient(to right, #3a56d4, #2e3bb3);
+}
+
+[data-theme="dark"] .topbar-input:disabled {
+  background-color: #2d2d2d;
+}
+
+[data-theme="dark"] .topbar-theme-toggle {
+  color: #e0e0e0;
+}
+
+/* Theme toggle specific styles */
+[data-theme="dark"] .topbar-theme-icon {
+  color: #ffc107; /* Yellow color for sun icon in dark mode */
+}
+
+
+/* Base Topbar Styles */
+.topbar-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+  transition: var(--transition);
+  height: 5rem;
+  border-bottom: 1.0px solid white;
+}
+
+.topbar-navbar.topbar-scrolled {
+  background-color: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(0.86rem);
+  -webkit-backdrop-filter: blur(0.86rem);
+  box-shadow: var(--shadow-md);
+  height: 3.2rem;
+}
+
+/* Theme Toggle Styles */
+.topbar-theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.57rem;
+  margin-right: 1.07rem;
+  color: var(--text-color);
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar-theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+.topbar-theme-icon {
+  font-size: 1.20rem;
+  color: rgb(220, 207, 207);
+}
+
+/* If you want to position it differently */
+.topbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.71rem;
+}
+
+/* Add these variables to your :root and [data-theme="dark"] */
+:root {
+  --text-color: #333333;
+  --bg-color: #ffffff;
+  /* ... other light theme variables */
+}
+
+[data-theme="dark"] {
+  --text-color: #f5f5f5;
+  --bg-color: #121212;
+}
+
+/* Brand Section */
+.top-bar-brand {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  /* border: 0.214rem solid red; */
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.top-bar-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.top-bar-logo-icon {
+  font-size: 1.40rem;
+  color: white;
+}
+
+.top-bar-app-name {
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: -0.5px;
+}
+
+.top-bar-tagline {
+  font-size: 0.75rem;
+  color: white;
+  margin-top: 0.25rem;
+  letter-spacing: 0.5px;
+}
+
+/* User Profile Section */
+.topbar-user-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  position: relative;
+  padding: 0.4rem 0.75rem;
+  border-radius: 2rem;
+  transition: var(--transition);
+  will-change: transform;
+  background-color: white;
+}
+
+.topbar-user-profile:hover {
+  background-color: var(--background-dark);
+  transform: translateY(-1.0px);
+}
+
+
+
+.topbar-avatar {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.topbar-user-profile:hover .topbar-avatar {
+  transform: scale(1.05);
+  box-shadow: 0 0.286rem 0.57rem rgba(67, 97, 238, 0.2);
+}
+
+.topbar-username {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text);
+}
+
+
+.topbar-dropdown-icon {
+  transition: var(--transition);
+  color: var(--text-light);
+}
+
+.topbar-dropdown-icon.topbar-rotate {
+  transform: rotate(180deg);
+  color: var(--primary);
+}
+
+/* Dropdown Menu */
+.topbar-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 0.57rem);
+  right: 0;
+  width: 15.0rem;
+  background-color: var(--background);
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  z-index: 1100;
+  opacity: 0;
+  transform: translateY(-0.71rem);
+  visibility: hidden;
+  transition: var(--transition);
+  will-change: transform, opacity;
+  padding: 0.8rem;
+}
+
+.topbar-user-profile:hover .topbar-dropdown-menu,
+.topbar-dropdown-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.topbar-dropdown-header {
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--background-dark);
+}
+
+.topbar-avatar-large {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.topbar-user-fullname {
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.topbar-user-email {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  word-break: break-all;
+}
+
+.topbar-dropdown-divider {
+  background-color: var(--border-light);
+  margin: 0.5rem 0;
+}
+
+.topbar-dropdown-item {
+  width: 100%;
+  padding: 0.875rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 0.80rem;
+  transition: var(--transition);
+}
+
+.topbar-dropdown-item:hover {
+  color: white;
+  padding-left: 1.5rem;
+ background: linear-gradient(135deg, #1583f17f 0%, #283593 100%);;
+ border-radius: 0.357rem;
+}
+
+.topbar-dropdown-item:hover .topbar-icon {
+  color: white;
+}
+
+.topbar-dropdown-item.topbar-logout {
+  color: var(--error);
+}
+
+.topbar-dropdown-item.topbar-logout:hover {
+  color: var(--error);
+  background-color: rgba(62, 96, 175, 0.647);
+}
+
+.topbar-icon {
+  font-size: 0.90rem;
+  color: var(--text-light);
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+/* Modal Styles */
+.topbar-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  backdrop-filter: blur(0.57rem);
+  -webkit-backdrop-filter: blur(0.57rem);
+  transition: var(--transition);
+}
+
+.topbar-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.topbar-modal-content {
+  background-color: var(--background);
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 25.7rem;
+  box-shadow: var(--shadow-lg);
+  transform: translateY(1.43rem);
+  transition: var(--transition);
+  will-change: transform;
+  overflow: hidden;
+}
+
+.topbar-modal-overlay.active .topbar-modal-content {
+  transform: translateY(0);
+}
+
+.topbar-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1.0px solid var(--border-light);
+}
+
+.topbar-modal-header h3 {
+  margin: 0;
+  font-size: 1.12rem;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.25px;
+}
+
+.topbar-close-btn {
+  background: none;
+  border: none;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-light);
+  transition: var(--transition);
+}
+
+.topbar-close-btn:hover {
+  background-color: var(--background-dark);
+  color: rgb(0, 0, 0);
+  font-size: 0.75rem;
+  transform: rotate(90deg);
+}
+
+/* Form Styles */
+.topbar-form-group {
+  padding: 0 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.topbar-form-group label {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.topbar-form-group input {
+  width: 100%;
+  padding: 0.875rem 1.25rem;
+  border: 1.0px solid var(--border);
+  border-radius: 0.75rem;
+  font-size: 0.80rem;
+  transition: var(--transition);
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.topbar-form-group input:focus {
+  outline: none;
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 0.214rem rgba(67, 97, 238, 0.15);
+  background-color: var(--background);
+}
+
+.topbar-form-group input::placeholder {
+  color: var(--text-lighter);
+  opacity: 0.7;
+}
+
+.topbar-password-strength {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.topbar-password-strength span {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--text-light);
+  transition: var(--transition);
+}
+
+.topbar-password-strength .topbar-valid {
+  color: var(--success);
+}
+
+/* Message Styles */
+.topbar-message {
+  padding: 0.875rem 1.25rem;
+  margin: 0 1.5rem 1.5rem;
+  border-radius: 0.75rem;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: var(--transition);
+}
+
+.topbar-message.topbar-success {
+  background-color: rgba(76, 201, 240, 0.08);
+  color: var(--success);
+  border: 1.0px solid rgba(76, 201, 240, 0.2);
+}
+
+.topbar-message.topbar-error {
+  background-color: rgba(239, 35, 60, 0.08);
+  color: var(--error);
+  border: 1.0px solid rgba(239, 35, 60, 0.2);
+}
+
+/* Submit Button */
+.topbar-submit-btn {
+  width: calc(100% - 3rem);
+  margin: 0 1.5rem 1.75rem;
+  padding: 0.9375rem;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 0.80rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 0.286rem 0.429rem rgba(67, 97, 238, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.topbar-submit-btn:hover {
+  transform: translateY(-2.0px);
+  box-shadow: 0 0.429rem 0.86rem rgba(67, 97, 238, 0.2);
+}
+
+.topbar-submit-btn:active {
+  transform: translateY(0);
+}
+
+.topbar-submit-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.topbar-submit-btn:hover::after {
+  transform: translateX(100%);
+}
+
+/* Animations */
+@keyframes topbar-fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes topbar-slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(1.43rem);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 41.1rem) {
+  .topbar-navbar {
+    padding: 0.75rem 1.25rem;
+    height: 3.2rem;
+  }
+  
+  .topbar-app-name {
+    font-size: 0.90rem;
+  }
+  
+  .topbar-dropdown-menu {
+    width: 13.9rem;
+    right: 1rem;
+  }
+  
+  .topbar-modal-content {
+    margin: 0 1rem;
+    width: calc(100% - 2rem);
+    border-radius: 0.875rem;
+  }
+  
+  .topbar-modal-header {
+    padding: 1.25rem;
+  }
+  
+  .topbar-form-group {
+    padding: 0 1.25rem;
+  }
+  
+  .topbar-submit-btn {
+    width: calc(100% - 2.5rem);
+    margin: 0 1.25rem 1.5rem;
+  }
+}
+
+@media (max-width: 25.7rem) {
+  .topbar-navbar {
+    padding: 0.75rem 1rem;
+  }
+  
+  .topbar-logo {
+    height: 1.94rem;
+  }
+  
+  .topbar-app-name {
+    display: none;
+  }
+  
+  .topbar-user-profile {
+    padding: 0.5rem;
+  }
+  
+  .topbar-username span {
+    display: none;
+  }
+  
+  .topbar-dropdown-menu {
+    width: 11.8rem;
+  }
+}
+
+/* Add this to your NavBar.css file */
+.topbar-loader {
+  display: inline-block;
+  width: 1.14rem;
+  height: 1.14rem;
+  border: 2.0px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: topbar-spin 1s ease-in-out infinite;
+  margin-right: 0.57rem;
+  vertical-align: middle;
+}
+
+@keyframes topbar-spin {
+  to { transform: rotate(360deg); }
+}
+
+.topbar-submit-btn:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: 0 0.286rem 0.429rem rgba(67, 97, 238, 0.15) !important;
+}
+
+.topbar-submit-btn:disabled::after {
+  display: none;
+}
+
+.topbar-input:disabled {
+  background-color: var(--background-dark);
+  cursor: not-allowed;
+}
+
+.topbar-close-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+  background-color: transparent !important;
+}

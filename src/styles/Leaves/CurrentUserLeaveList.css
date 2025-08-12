@@ -1,0 +1,464 @@
+/* Dark Theme Styles */
+[data-theme="dark"] .currentUserLeave-container {
+  background-color: #1a1f2c;
+  box-shadow: 0 2.0px 8px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .currentUserLeave-scrollable::-webkit-scrollbar-track {
+  background-color: #1a1f2c;
+}
+
+[data-theme="dark"] .currentUserLeave-scrollable::-webkit-scrollbar-thumb {
+  background-color: #4d9fec;
+}
+
+[data-theme="dark"] .currentUserLeave-header {
+  background-color: #1a1f2c;
+}
+
+[data-theme="dark"] .currentUserLeave-summary {
+  color: #e0e3e7;
+  background-color: rgba(77, 159, 236, 0.1);
+}
+
+[data-theme="dark"] .currentUserLeave-summary:hover {
+  background-color: rgba(77, 159, 236, 0.15);
+}
+
+[data-theme="dark"] .currentUserLeave-count {
+  color: #ff6b6b;
+  background-color: rgba(255, 107, 107, 0.1);
+}
+
+[data-theme="dark"] .currentUserLeave-item {
+  background-color: #2a3142;
+  box-shadow: 0 1.0px 3px rgba(0, 0, 0, 0.3);
+  border-left-color: #4d9fec;
+}
+
+[data-theme="dark"] .currentUserLeave-name {
+  color: #e0e3e7;
+}
+
+[data-theme="dark"] .currentUserLeave-email {
+  color: #a1a8b5;
+}
+
+[data-theme="dark"] .currentUserLeave-dateBox {
+  background-color: rgba(77, 159, 236, 0.1);
+}
+
+[data-theme="dark"] .currentUserLeave-dateLabel {
+  color: #a1a8b5;
+}
+
+[data-theme="dark"] .currentUserLeave-dates {
+  color: #4d9fec;
+}
+
+[data-theme="dark"] .currentUserLeave-arrow {
+  color: #7f8c8d;
+}
+
+[data-theme="dark"] .currentUserLeave-days {
+  color: #ff6b6b;
+  background-color: rgba(255, 107, 107, 0.1);
+}
+
+[data-theme="dark"] .currentUserLeave-reasonBox {
+  background-color: rgba(29, 209, 161, 0.1);
+}
+
+[data-theme="dark"] .currentUserLeave-reasonLabel {
+  color: #a1a8b5;
+}
+
+[data-theme="dark"] .currentUserLeave-reasonText {
+  color: #1dd1a1;
+}
+
+[data-theme="dark"] .currentUserLeave-loading,
+[data-theme="dark"] .currentUserLeave-empty {
+  color: #a1a8b5;
+  background-color: rgba(161, 168, 181, 0.1);
+  box-shadow: 0 1.0px 3px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .currentUserLeave-error {
+  color: #ff6b6b;
+  background-color: rgba(255, 107, 107, 0.1);
+  border-left-color: #ff6b6b;
+}
+
+/* Dark theme avatar */
+[data-theme="dark"] .currentUserLeave-avatar {
+  background-color: #4d9fec;
+  color: #1a1f2c;
+}
+
+/* Animation for dark theme */
+@keyframes currentUserLeave-fadeInDark {
+  from {
+    opacity: 0;
+    transform: translateY(0.71rem);
+    background-color: transparent;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: #2a3142;
+  }
+}
+
+[data-theme="dark"] .currentUserLeave-fadeIn {
+  animation-name: currentUserLeave-fadeInDark;
+}
+
+[data-theme="dark"] .currentUserLeave-item {
+  animation-name: currentUserLeave-fadeInDark;
+}
+/* CurrentUserLeaveList.css - Improved UI/UX */
+.currentUserLeave-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 0.57rem;
+  box-shadow: 0 2.0px 8px rgba(0, 0, 0, 0.08);
+  max-height: 42vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.currentUserLeave-scrollable {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #3498db #f9f9f9;
+  padding-right: 0.286rem;
+  flex-grow: A1;
+}
+
+.currentUserLeave-scrollable::-webkit-scrollbar {
+  width: 0.429rem;
+}
+
+.currentUserLeave-scrollable::-webkit-scrollbar-track {
+  background-color: #f9f9f9;
+  border-radius: 0.71rem;
+}
+
+.currentUserLeave-scrollable::-webkit-scrollbar-thumb {
+  background-color: #3498db;
+  border-radius: 0.71rem;
+}
+
+.currentUserLeave-header {
+  position: sticky;
+  top: 0;
+  background-color: #f9f9f9;
+  padding-bottom: 0.8rem;
+  z-index: 2;
+}
+
+.currentUserLeave-title {
+  color: #2c3e50;
+  margin-bottom: 0.8rem;
+  font-size: 0.90rem;
+  font-weight: 600;
+  border-bottom: 2.0px solid #3498db;
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.currentUserLeave-icon {
+  margin-right: 0.5rem;
+  color: #3498db;
+}
+
+.currentUserLeave-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  font-size: 0.75rem;
+  color: #34495e;
+  background-color: rgba(52, 152, 219, 0.08);
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.357rem;
+  transition: all 0.3s ease;
+}
+
+.currentUserLeave-summary:hover {
+  background-color: rgba(52, 152, 219, 0.12);
+}
+
+.currentUserLeave-count {
+  font-weight: bold;
+  color: #e74c3c;
+  background-color: rgba(231, 76, 60, 0.1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 1.43rem;
+  display: inline-block;
+  min-width: 1.5rem;
+  text-align: center;
+}
+
+.currentUserLeave-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.currentUserLeave-item {
+  background-color: white;
+  padding: 0.8rem;
+  border-radius: 0.429rem;
+  box-shadow: 0 1.0px 3px rgba(0, 0, 0, 0.1);
+  font-size: 0.75rem;
+  line-height: 1.00.4;
+  border-left: 0.214rem solid #3498db;
+  transition: all 0.2s ease-in-out;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+.currentUserLeave-item:hover {
+  transform: translateY(-2.0px);
+  box-shadow: 0 0.214rem 0.57rem rgba(0, 0, 0, 0.1);
+}
+
+.currentUserLeave-user {
+  margin-bottom: 0.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.currentUserLeave-avatar {
+  width: 1.70rem;
+  height: 1.70rem;
+  background-color: #3498db;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.currentUserLeave-userInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.currentUserLeave-name {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.1rem;
+}
+
+.currentUserLeave-email {
+  color: #7f8c8d;
+  font-size: 0.75rem;
+}
+
+.currentUserLeave-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+@media (max-width: 34.3rem) {
+  .currentUserLeave-details {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
+
+.currentUserLeave-dateBox {
+  background-color: rgba(52, 152, 219, 0.08);
+  padding: 0.5rem;
+  border-radius: 0.286rem;
+  margin-top: 0.3rem;
+}
+
+.currentUserLeave-dateLabel {
+  display: block;
+  color: #34495e;
+  font-size: 0.75rem;
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+}
+
+.currentUserLeave-dates {
+  color: #3498db;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 500;
+}
+
+.currentUserLeave-arrow {
+  color: #95a5a6;
+}
+
+.currentUserLeave-days {
+  color: #e74c3c;
+  font-weight: 600;
+  font-size: 0.75rem;
+  background-color: rgba(231, 76, 60, 0.1);
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.86rem;
+  margin-left: 0.3rem;
+}
+
+.currentUserLeave-reasonBox {
+  background-color: rgba(22, 160, 133, 0.08);
+  padding: 0.5rem;
+  border-radius: 0.286rem;
+  margin-top: 0.3rem;
+}
+
+.currentUserLeave-reasonLabel {
+  display: block;
+  color: #34495e;
+  font-size: 0.75rem;
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+}
+
+.currentUserLeave-reason {
+  color: #34495e;
+}
+
+.currentUserLeave-reasonText {
+  color: #16a085;
+  font-weight: 500;
+}
+
+.currentUserLeave-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 6.4rem;
+  text-align: center;
+  padding: 1rem;
+  color: #7f8c8d;
+  font-size: 0.75rem;
+  border-radius: 0.57rem;
+  background-color: rgba(127, 140, 141, 0.1);
+  box-shadow: 0 1.0px 3px rgba(0, 0, 0, 0.05);
+}
+
+.currentUserLeave-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 6.4rem;
+  text-align: center;
+  padding: 1rem;
+  color: #7f8c8d;
+  font-size: 0.75rem;
+  border-radius: 0.57rem;
+  background-color: rgba(127, 140, 141, 0.1);
+  box-shadow: 0 1.0px 3px rgba(0, 0, 0, 0.05);
+  font-style: italic;
+}
+
+.currentUserLeave-error {
+  text-align: center;
+  padding: 1rem;
+  color: #e74c3c;
+  font-weight: 500;
+  font-size: 0.75rem;
+  background-color: rgba(231, 76, 60, 0.1);
+  border-radius: 0.57rem;
+  border-left: 0.286rem solid #e74c3c;
+}
+
+/* Animation for loading and appearing items */
+@keyframes currentUserLeave-fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(0.71rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.currentUserLeave-fadeIn {
+  animation: currentUserLeave-fadeIn 0.3s ease-out forwards;
+}
+
+.currentUserLeave-item {
+  animation: currentUserLeave-fadeIn 0.3s ease-out forwards;
+}
+
+.currentUserLeave-item:nth-child(2) {
+  animation-delay: 0.05s;
+}
+
+.currentUserLeave-item:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+.currentUserLeave-item:nth-child(4) {
+  animation-delay: 0.15s;
+}
+
+.currentUserLeave-item:nth-child(n+5) {
+  animation-delay: 0.2s;
+}
+
+@media (max-width: 41.1rem) {
+  .currentUserLeave-container {
+    max-height: 48.0vh;
+  }
+  
+  .currentUserLeave-title {
+    font-size: 0.75rem;
+  }
+  
+  .currentUserLeave-summary {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 25.7rem) {
+  .currentUserLeave-container {
+    padding: 0.8rem;
+  }
+  
+  .currentUserLeave-title {
+    font-size: 0.80rem;
+  }
+  
+  .currentUserLeave-item {
+    padding: 0.7rem;
+  }
+  
+  .currentUserLeave-user {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+  
+  .currentUserLeave-avatar {
+    width: 1.46rem;
+    height: 1.46rem;
+    font-size: 0.75rem;
+  }
+}

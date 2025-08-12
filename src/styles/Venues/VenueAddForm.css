@@ -1,0 +1,153 @@
+/* Import the existing project form styles */
+@import '../SimpleProject/AddOrEditProjectForm.css';
+
+/* Venue-specific autocomplete styles */
+.venue-input-group {
+  position: relative;
+}
+
+.venue-input-container {
+  position: relative;
+}
+
+.venue-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1.0px solid #e1e5e9;
+  border-top: none;
+  border-radius: 0 0 0.57rem 0.57rem;
+  box-shadow: 0 0.286rem 0.86rem rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-height: 10.7rem;
+  overflow-y: auto;
+}
+
+.venue-suggestion-item {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 0.75rem;
+  color: #4a5568;
+  border-bottom: 1.0px solid #f7fafc;
+}
+
+.venue-suggestion-item:hover {
+  background-color: #ebf8ff;
+  color: #3182ce;
+}
+
+.venue-suggestion-item:last-child {
+  border-bottom: none;
+}
+
+/* Dark mode venue suggestions */
+[data-theme="dark"] .venue-suggestions {
+  background-color: #2d3748;
+  border-color: #4a5568;
+  box-shadow: 0 0.286rem 0.86rem rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .venue-suggestion-item {
+  color: #e2e8f0;
+  border-bottom-color: #4a5568;
+}
+
+[data-theme="dark"] .venue-suggestion-item:hover {
+  background-color: #4a5568;
+  color: #63b3ed;
+}
+
+/* Venue-specific scrollbar for suggestions */
+.venue-suggestions::-webkit-scrollbar {
+  width: 0.429rem;
+}
+
+.venue-suggestions::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 0.214rem;
+}
+
+.venue-suggestions::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 0.214rem;
+}
+
+.venue-suggestions::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
+
+[data-theme="dark"] .venue-suggestions::-webkit-scrollbar-track {
+  background: #2d3748;
+}
+
+[data-theme="dark"] .venue-suggestions::-webkit-scrollbar-thumb {
+  background: #4a5568;
+}
+
+[data-theme="dark"] .venue-suggestions::-webkit-scrollbar-thumb:hover {
+  background: #6a7b8a;
+}
+
+/* Panel controls styles */
+.projectAddForm-panel-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.projectAddForm-toggle-button {
+  background: #f8f9fa;
+  border: 1.0px solid #e1e5e9;
+  border-radius: 0.429rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #4a5568;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  min-width: 3.2rem;
+}
+
+.projectAddForm-toggle-button:hover {
+  background: #e2e8f0;
+  border-color: #cbd5e0;
+}
+
+.projectAddForm-toggle-button.active {
+  background: #3182ce;
+  border-color: #3182ce;
+  color: white;
+}
+
+.projectAddForm-toggle-button.active:hover {
+  background: #2c5aa0;
+  border-color: #2c5aa0;
+}
+
+/* Dark mode toggle button */
+[data-theme="dark"] .projectAddForm-toggle-button {
+  background: #2d3748;
+  border-color: #4a5568;
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .projectAddForm-toggle-button:hover {
+  background: #4a5568;
+  border-color: #6a7b8a;
+}
+
+[data-theme="dark"] .projectAddForm-toggle-button.active {
+  background: #3182ce;
+  border-color: #3182ce;
+  color: white;
+}
+
+[data-theme="dark"] .projectAddForm-toggle-button.active:hover {
+  background: #2c5aa0;
+  border-color: #2c5aa0;
+}

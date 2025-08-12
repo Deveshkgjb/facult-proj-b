@@ -1,0 +1,817 @@
+
+
+/* Dark Mode Styles */
+[data-theme="dark"] .projectAddForm-container {
+  background-color: #1a1f2c;
+  color: #e0e3e9;
+  box-shadow: 0 0.286rem 1.43rem rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .projectAddForm-header {
+  border-bottom-color: #2d3441;
+}
+
+[data-theme="dark"] .projectAddForm-back-button {
+  background-color: #2d3441;
+  color: #4d7cff;
+  border-color: #3a4252;
+}
+
+[data-theme="dark"] .projectAddForm-back-button:hover {
+  background-color: #3a4252;
+}
+
+[data-theme="dark"] .projectAddForm-title {
+  color: #f5f7fa;
+}
+
+[data-theme="dark"] .projectAddForm-message.success {
+  background-color: #1f3a1f;
+  color: #81c784;
+  border-left-color: #66bb6a;
+}
+
+[data-theme="dark"] .projectAddForm-message.error {
+  background-color: #3a1f1f;
+  color: #ff7d7d;
+  border-left-color: #ff5252;
+}
+
+[data-theme="dark"] .projectAddForm-projects-panel,
+[data-theme="dark"] .projectAddForm-form-section {
+  background-color: #232a38;
+  border-color: #2d3441;
+  box-shadow: 0 1.0px 3px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .projectAddForm-panel-title,
+[data-theme="dark"] .projectAddForm-section-title {
+  color: #f5f7fa;
+}
+
+[data-theme="dark"] .projectAddForm-section-icon {
+  color: #4d7cff;
+}
+
+[data-theme="dark"] .projectAddForm-project-item {
+  background-color: #2d3441;
+  border-color: #3a4252;
+  color: #e0e3e9;
+}
+
+[data-theme="dark"] .projectAddForm-project-item:hover {
+  background-color: #3a4252;
+}
+
+[data-theme="dark"] .projectAddForm-project-item.active {
+  background-color: #3a4252;
+  border-left-color: #4d7cff;
+}
+
+[data-theme="dark"] .projectAddForm-project-name {
+  color: #f5f7fa;
+}
+
+[data-theme="dark"] .projectAddForm-project-meta {
+  color: #a0a4ab;
+}
+
+[data-theme="dark"] .projectAddForm-status-badge.ongoing {
+  background: #1e3a8a;
+  color: #a5d6ff;
+}
+
+[data-theme="dark"] .projectAddForm-status-badge.completed {
+  background: #1e3a1e;
+  color: #a5d6a7;
+}
+
+[data-theme="dark"] .projectAddForm-status-badge.cancelled {
+  background: #3a1f1f;
+  color: #ff8a80;
+}
+
+[data-theme="dark"] .projectAddForm-status-badge.under-review {
+  background: #3a3a1e;
+  color: #ffecb3;
+}
+
+[data-theme="dark"] .projectAddForm-empty-state {
+  background-color: #2d3441;
+  border-color: #3a4252;
+  color: #a0a4ab;
+}
+
+[data-theme="dark"] .projectAddForm-empty-icon {
+  color: #6b7280;
+}
+
+[data-theme="dark"] .projectAddForm-clear-search-button {
+  color: #4d7cff;
+}
+
+[data-theme="dark"] .projectAddForm-clear-search-button:hover {
+  background-color: #3a4252;
+}
+
+[data-theme="dark"] .projectAddForm-add-new-user {
+  background-color: #2e7d32;
+  color: white;
+}
+
+[data-theme="dark"] .projectAddForm-add-new-user:hover {
+  background-color: #3a8a40;
+}
+
+[data-theme="dark"] .projectAddForm-label {
+  color: #d0d4dc;
+}
+
+[data-theme="dark"] .projectAddForm-input,
+[data-theme="dark"] .projectAddForm-select,
+[data-theme="dark"] .projectAddForm-textarea,
+[data-theme="dark"] .projectAddForm-search-container input,
+[data-theme="dark"] .projectAddForm-team-members-list {
+  background-color: #2d3441;
+  border-color: #3a4252;
+  color: #e0e3e9;
+}
+
+[data-theme="dark"] .projectAddForm-input:focus,
+[data-theme="dark"] .projectAddForm-select:focus,
+[data-theme="dark"] .projectAddForm-textarea:focus,
+[data-theme="dark"] .projectAddForm-search-container input:focus {
+  border-color: #4d7cff;
+  box-shadow: 0 0 0 0.214rem rgba(77, 124, 255, 0.3);
+  background-color: #232a38;
+}
+
+[data-theme="dark"] .projectAddForm-team-member-checkbox:hover {
+  background-color: #3a4252;
+}
+
+[data-theme="dark"] .projectAddForm-checkmark {
+  background-color: #2d3441;
+  border-color: #4b5563;
+}
+
+[data-theme="dark"] .projectAddForm-team-member-checkbox input:checked ~ .projectAddForm-checkmark {
+  background-color: #4d7cff;
+  border-color: #4d7cff;
+}
+
+[data-theme="dark"] .projectAddForm-member-name {
+  color: #f5f7fa;
+}
+
+[data-theme="dark"] .projectAddForm-member-role {
+  background-color: #3a4252;
+  color: #a0a4ab;
+}
+
+[data-theme="dark"] .projectAddForm-form-actions {
+  background-color: #232a38;
+  border-color: #2d3441;
+}
+
+[data-theme="dark"] .projectAddForm-submit-button {
+  background-color: #2e7d32;
+  color: white;
+}
+
+[data-theme="dark"] .projectAddForm-submit-button:hover {
+  background-color: #3a8a40;
+}
+
+[data-theme="dark"] .projectAddForm-delete-button {
+  background-color: #3a1f1f;
+  color: #ff7d7d;
+  border-color: #4a2f2f;
+}
+
+[data-theme="dark"] .projectAddForm-delete-button:hover {
+  background-color: #4a2f2f;
+  border-color: #ff5252;
+}
+
+[data-theme="dark"] .projectAddForm-cancel-button {
+  background-color: #2d3441;
+  color: #e0e3e9;
+  border-color: #3a4252;
+}
+
+[data-theme="dark"] .projectAddForm-cancel-button:hover {
+  background-color: #3a4252;
+}
+
+/* Dark mode scrollbar */
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: #2d3441;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: #4b5563;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+[data-theme="dark"] * {
+  scrollbar-color: #4b5563 #2d3441;
+}
+/* Main Container */
+.projectAddForm-container {
+  max-width: 75.0rem;
+  margin: 0 auto;
+  padding: 1.21rem;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-height: 79.2vh;
+  overflow-y: auto;
+  background-color: #f9fafb;
+  border-radius: 0.86rem;
+  box-shadow: 0 0.286rem 0.429rem rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+.projectAddForm-header {
+  display: flex;
+  align-items: center;
+  gap: 1.21rem;
+  margin-bottom: 1.52rem;
+  padding-bottom: 1.07rem;
+  border-bottom: 1.0px solid #e5e7eb;
+}
+
+.projectAddForm-back-button {
+  background: #f3f4f6;
+  border: 1.0px solid #e5e7eb;
+  padding: 0.71rem 1.07rem;
+  border-radius: 0.57rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.57rem;
+  transition: all 0.3s ease;
+  color: #374151;
+}
+
+.projectAddForm-back-button:hover {
+  background: #e5e7eb;
+  transform: translateY(-2.0px);
+  box-shadow: 0 2.0px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projectAddForm-title {
+  margin: 0;
+  font-size: 1.20rem;
+  color: #1f2937;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.71rem;
+}
+
+/* Message */
+.projectAddForm-message {
+  padding: 1.07rem;
+  border-radius: 0.57rem;
+  margin-bottom: 1.21rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.projectAddForm-message.success {
+  background: #ecfdf5;
+  color: #065f46;
+  border-left: 0.357rem solid #10b981;
+}
+
+.projectAddForm-message.error {
+  background: #fef2f2;
+  color: #991b1b;
+  border-left: 0.357rem solid #ef4444;
+}
+
+.projectAddForm-message-close {
+  background: none;
+  border: none;
+  font-size: 0.90rem;
+  cursor: pointer;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.projectAddForm-message-close:hover {
+  transform: scale(1.2);
+}
+
+/* Layout */
+.projectAddForm-layout {
+  display: flex;
+  gap: 1.52rem;
+}
+
+.projectAddForm-projects-panel {
+  flex: 1;
+  min-width: 18.8rem;
+  max-height: 79.2vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  background-color: white;
+  border-radius: 0.86rem;
+  padding: 1.14rem;
+  box-shadow: 0 1.0px 3px rgba(0, 0, 0, 0.05);
+}
+
+.projectAddForm-form-panel {
+  flex: 2;
+}
+
+/* Projects Panel */
+.projectAddForm-panel-header {
+  margin-bottom: 1.21rem;
+}
+
+.projectAddForm-panel-title {
+  margin: 0 0 1.07rem 0;
+  font-size: 0.90rem;
+  display: flex;
+  align-items: center;
+  gap: 0.71rem;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.projectAddForm-search-container {
+  position: relative;
+  margin-bottom: 1.07rem;
+}
+
+.projectAddForm-search-container input {
+  width: 100%;
+  padding: 0.71rem 1.07rem 10px 35px;
+  border: 1.0px solid #d1d5db;
+  border-radius: 0.57rem;
+  font-size: 0.80rem;
+  transition: all 0.3s ease;
+  background-color: #f9fafb;
+}
+
+.projectAddForm-search-container input:focus {
+  border-color: #0969da;
+  box-shadow: 0 0 0 0.214rem rgba(9, 105, 218, 0.15);
+  outline: none;
+  background-color: white;
+}
+
+.projectAddForm-search-icon {
+  position: absolute;
+  left: 0.71rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+}
+
+.projectAddForm-projects-list {
+  max-height: calc(100vh - 13.4rem);
+  background-color: white;
+  overflow-y: auto;
+  padding-right: 0.357rem;
+  border-radius: 0.57rem;
+}
+
+.projectAddForm-project-item {
+  padding: 1.07rem;
+  border-radius: 0.57rem;
+  margin-bottom: 0.71rem;
+  cursor: pointer;
+  border: 1.0px solid #e5e7eb;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.projectAddForm-project-item:hover {
+  transform: translateY(-0.214rem);
+  box-shadow: 0 0.286rem 0.429rem rgba(0, 0, 0, 0.1);
+  border-color: #4b5563;
+}
+
+.projectAddForm-project-item.active {
+  border-left: 0.357rem solid #0969da;
+  background-color: #f3f4f6;
+}
+
+.projectAddForm-project-name {
+  font-weight: 600;
+  margin-bottom: 0.57rem;
+  color: #1f2937;
+}
+
+.projectAddForm-project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.71rem;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.projectAddForm-project-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.357rem;
+}
+
+.projectAddForm-status-badge {
+  padding: 0.286rem 0.57rem;
+  border-radius: 0.86rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.projectAddForm-status-badge.ongoing {
+  background: #ddf4ff;
+  color: #0969da;
+}
+
+.projectAddForm-status-badge.completed {
+  background: #dafbe1;
+  color: #1a7f37;
+}
+
+.projectAddForm-status-badge.cancelled {
+  background: #ffebe9;
+  color: #cf222e;
+}
+
+.projectAddForm-status-badge.under-review {
+  background: #fff8c5;
+  color: #9a6700;
+}
+
+.projectAddForm-empty-state {
+  text-align: center;
+  padding: 1.82rem;
+  color: #6b7280;
+  background-color: #f9fafb;
+  border-radius: 0.57rem;
+  border: 1.0px dashed #d1d5db;
+}
+
+.projectAddForm-empty-icon {
+  margin-bottom: 0.71rem;
+  color: #9ca3af;
+}
+
+.projectAddForm-clear-search-button {
+  background: none;
+  border: none;
+  color: #0969da;
+  cursor: pointer;
+  padding: 0.429rem 0.86rem;
+  border-radius: 0.429rem;
+  margin-top: 0.71rem;
+  transition: all 0.3s ease;
+}
+
+.projectAddForm-clear-search-button:hover {
+  background: #f0f6ff;
+  text-decoration: underline;
+}
+
+.projectAddForm-add-new-user {
+  width: auto;
+  min-width: 5rem;
+  height: 2.25rem;
+  background-color: #10b981;
+  color: white;
+  border-radius: 0.429rem !important;
+  border: none;
+  padding: 0 0.86rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.71rem;
+}
+
+.projectAddForm-add-new-user:hover {
+  background-color: #059669;
+  transform: translateY(-2.0px);
+  box-shadow: 0 2.0px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Panel */
+.projectAddForm-form-section {
+  margin-bottom: 1.52rem;
+  background: #fff;
+  border-radius: 0.86rem;
+  padding: 1.21rem;
+  box-shadow: 0 1.0px 3px rgba(0, 0, 0, 0.1);
+  border: 1.0px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.projectAddForm-form-section:hover {
+  box-shadow: 0 0.286rem 0.429rem rgba(0, 0, 0, 0.05);
+}
+
+.projectAddForm-section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.71rem;
+  margin-bottom: 1.21rem;
+  padding-bottom: 0.71rem;
+  border-bottom: 1.0px solid #e5e7eb;
+}
+
+.projectAddForm-section-title {
+  margin: 0;
+  font-size: 0.90rem;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.projectAddForm-section-icon {
+  color: #0969da;
+}
+
+.projectAddForm-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17.9rem, 1fr));
+  gap: 1.14rem;
+}
+
+.projectAddForm-form-group {
+  margin-bottom: 1.14rem;
+}
+
+.projectAddForm-label {
+  display: block;
+  margin-bottom: 0.57rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.projectAddForm-full-width {
+  grid-column: 1 / -1;
+}
+
+.projectAddForm-input, 
+.projectAddForm-select, 
+.projectAddForm-textarea {
+  width: 100%;
+  padding: 0.71rem 0.86rem;
+  border: 1.0px solid #d1d5db;
+  border-radius: 0.57rem;
+  font-size: 0.80rem;
+  transition: all 0.3s ease;
+  background-color: #f9fafb;
+}
+
+.projectAddForm-input:focus, 
+.projectAddForm-select:focus, 
+.projectAddForm-textarea:focus {
+  outline: none;
+  border-color: #0969da;
+  box-shadow: 0 0 0 0.214rem rgba(9, 105, 218, 0.15);
+  background-color: white;
+}
+
+.projectAddForm-textarea {
+  min-height: 5.4rem;
+  resize: vertical;
+}
+
+/* Team Members */
+.projectAddForm-team-members-list {
+  max-height: 10.7rem;
+  overflow-y: auto;
+  border: 1.0px solid #d1d5db;
+  border-radius: 0.57rem;
+  padding: 0.86rem;
+  margin-top: 0.71rem;
+  background-color: white;
+}
+
+.projectAddForm-team-member-checkbox {
+  display: flex;
+  align-items: center;
+  padding: 0.57rem 0.71rem;
+  border-radius: 0.429rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+  margin-bottom: 0.286rem;
+}
+
+.projectAddForm-team-member-checkbox:hover {
+  background: #f3f4f6;
+}
+
+.projectAddForm-checkbox-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.projectAddForm-checkmark {
+  height: 1.29rem;
+  width: 1.29rem;
+  background: #fff;
+  border: 1.0px solid #d1d5db;
+  border-radius: 0.286rem;
+  margin-right: 0.71rem;
+  display: inline-block;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.projectAddForm-team-member-checkbox input:checked ~ .projectAddForm-checkmark {
+  background: #0969da;
+  border-color: #0969da;
+}
+
+.projectAddForm-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.projectAddForm-team-member-checkbox input:checked ~ .projectAddForm-checkmark:after {
+  display: block;
+}
+
+.projectAddForm-team-member-checkbox .projectAddForm-checkmark:after {
+  left: 0.429rem;
+  top: 2.0px;
+  width: 0.357rem;
+  height: 0.71rem;
+  border: solid white;
+  border-width: 0 2.0px 2px 0;
+  transform: rotate(45deg);
+}
+
+.projectAddForm-member-name {
+  font-weight: 500;
+  margin-right: 0.57rem;
+  color: #1f2937;
+}
+
+.projectAddForm-member-role {
+  font-size: 0.75rem;
+  color: #6b7280;
+  background-color: #f3f4f6;
+  padding: 2.0px 6px;
+  border-radius: 0.286rem;
+}
+
+/* Form Actions */
+.projectAddForm-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.86rem;
+  margin-top: 1.21rem;
+  background-color: #f9fafb;
+  padding: 1.14rem;
+  border-radius: 0 0 0.57rem 0.57rem;
+  border-top: 1.0px solid #e5e7eb;
+}
+
+.projectAddForm-submit-button, 
+.projectAddForm-delete-button, 
+.projectAddForm-cancel-button {
+  padding: 0.71rem 1.21rem;
+  border-radius: 0.57rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.57rem;
+  transition: all 0.3s ease;
+}
+
+.projectAddForm-submit-button {
+  background: #0969da;
+  color: white;
+  border: none;
+}
+
+.projectAddForm-submit-button:hover {
+  background: #0550ae;
+  transform: translateY(-2.0px);
+  box-shadow: 0 2.0px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projectAddForm-delete-button {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1.0px solid #fecaca;
+}
+
+.projectAddForm-delete-button:hover {
+  background: #fecaca;
+  border-color: #ef4444;
+}
+
+.projectAddForm-cancel-button {
+  background: #f3f4f6;
+  color: #1f2937;
+  border: 1.0px solid #e5e7eb;
+}
+
+.projectAddForm-cancel-button:hover {
+  background: #e5e7eb;
+}
+
+/* Responsive */
+@media (max-width: 54.9rem) {
+  .projectAddForm-layout {
+    flex-direction: column;
+  }
+  
+  .projectAddForm-projects-panel {
+    min-width: 100%;
+    max-height: 21.4rem;
+    margin-bottom: 1.21rem;
+  }
+  
+  .projectAddForm-projects-list {
+    max-height: 16.1rem;
+  }
+}
+
+@media (max-width: 41.1rem) {
+  .projectAddForm-container {
+    padding: 1.07rem;
+  }
+  
+  .projectAddForm-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.71rem;
+  }
+  
+  .projectAddForm-form-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .projectAddForm-form-actions {
+    flex-direction: column;
+  }
+  
+  .projectAddForm-submit-button, 
+  .projectAddForm-delete-button, 
+  .projectAddForm-cancel-button {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .projectAddForm-form-section {
+    padding: 1.07rem;
+  }
+}
+
+@media (max-width: 25.7rem) {
+  .projectAddForm-container {
+    padding: 0.71rem;
+  }
+  
+  .projectAddForm-project-meta {
+    flex-direction: column;
+    gap: 0.357rem;
+    align-items: flex-start;
+  }
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 0.57rem;
+  height: 0.57rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 0.71rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 0.71rem;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c1c1c1 #f1f1f1;
+}

@@ -1,0 +1,1200 @@
+/* Dark Theme Styles */
+[data-theme="dark"] .expenses-project-container {
+  background-color: #1a1f2c;
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .expenses-project-header {
+  border-bottom-color: #2e2e2e;
+}
+
+[data-theme="dark"] .expenses-project-title {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .expenses-project-title::before {
+  background-color: #1e88e5;
+}
+
+[data-theme="dark"] .expenses-project-title-icon {
+  color: #1e88e5;
+}
+
+[data-theme="dark"] .expenses-project-stat-card {
+  background: #222836;
+  border-left-color: #1e88e5;
+  box-shadow: 0 0.286rem 0.429rem rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .expenses-project-stat-card:hover {
+  box-shadow: 0 0.71rem 1.43rem rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .expenses-project-stat-card:nth-child(2) {
+  border-left-color: #43a047;
+}
+
+[data-theme="dark"] .expenses-project-stat-card:nth-child(3) {
+  border-left-color: #fbc02d;
+}
+
+[data-theme="dark"] .expenses-project-stat-icon {
+  background: #1e88e5;
+  box-shadow: 0 0.286rem 0.429rem rgba(30, 136, 229, 0.3);
+}
+
+[data-theme="dark"] .expenses-project-stat-card:nth-child(2) .expenses-project-stat-icon {
+  background: #43a047;
+  box-shadow: 0 0.286rem 0.429rem rgba(67, 160, 71, 0.3);
+}
+
+[data-theme="dark"] .expenses-project-stat-card:nth-child(3) .expenses-project-stat-icon {
+  background: #fbc02d;
+  box-shadow: 0 0.286rem 0.429rem rgba(251, 192, 45, 0.3);
+}
+
+[data-theme="dark"] .expenses-project-stat-label {
+  color: #9e9e9e;
+}
+
+[data-theme="dark"] .expenses-project-view-toggle-group {
+  background: #222836;
+  box-shadow: 0 2.0px 4px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .expenses-project-view-toggle {
+  color: #9e9e9e;
+}
+
+[data-theme="dark"] .expenses-project-view-toggle:hover {
+  color: #1e88e5;
+  background-color: rgba(30, 136, 229, 0.1);
+}
+
+[data-theme="dark"] .expenses-project-view-toggle.expenses-project-active {
+  background: #1e88e5;
+  color: white;
+}
+
+[data-theme="dark"] .expenses-project-manage-button {
+  background: #43a047;
+  box-shadow: 0 2.0px 5px rgba(67, 160, 71, 0.3);
+}
+
+[data-theme="dark"] .expenses-project-manage-button:hover {
+  background: #388e3c;
+}
+
+[data-theme="dark"] .expenses-project-search-input {
+  background-color: #222836;
+  border-color: #2e2e2e;
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .expenses-project-search-input:focus {
+  border-color: #1e88e5;
+  box-shadow: 0 0 0 0.214rem rgba(30, 136, 229, 0.3);
+}
+
+[data-theme="dark"] .expenses-project-search-icon {
+  color: #757575;
+}
+
+[data-theme="dark"] .expenses-project-search-input:focus + .expenses-project-search-icon {
+  color: #1e88e5;
+}
+
+[data-theme="dark"] .expenses-project-empty-state {
+  background: #1e1e1e;
+  border-color: #2e2e2e;
+  box-shadow: 0 2.0px 8px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .expenses-project-empty-state h3 {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .expenses-project-empty-state p {
+  color: #9e9e9e;
+}
+
+[data-theme="dark"] .expenses-project-empty-icon {
+  color: #3e3e3e;
+}
+
+[data-theme="dark"] .expenses-project-add-button {
+  background: #1e88e5;
+  box-shadow: 0 2.0px 5px rgba(30, 136, 229, 0.3);
+}
+
+[data-theme="dark"] .expenses-project-add-button:hover {
+  background: #1565c0;
+}
+
+[data-theme="dark"] .expenses-project-content {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+[data-theme="dark"] .expenses-project-content::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+[data-theme="dark"] .expenses-project-content::-webkit-scrollbar-thumb {
+  background-color: #3e3e3e;
+}
+
+[data-theme="dark"] .expenses-project-card {
+  background: #222836;
+  border-color: #2e2e2e;
+  box-shadow: 0 0.286rem 0.429rem rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .expenses-project-card:hover {
+  box-shadow: 0 0.86rem 1.71rem rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .expenses-project-card-header {
+  background: #222836;
+  border-bottom-color: #3e3e3e;
+}
+
+[data-theme="dark"] .expenses-project-card-title h3 {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .expenses-project-agency {
+  color: #b0b0b0;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .expenses-project-budget-amount {
+  color: #b0b0b0;
+}
+
+[data-theme="dark"] .expenses-project-progress-container {
+  background: #2e2e2e;
+}
+
+[data-theme="dark"] .expenses-project-progress-bar {
+  background: linear-gradient(90deg, #1e88e5 0%, #1565c0 100%);
+}
+
+[data-theme="dark"] .expenses-project-progress-bar.expenses-project-over-budget {
+  background: linear-gradient(90deg, #e53935 0%, #c62828 100%);
+}
+
+[data-theme="dark"] .expenses-project-no-expenses {
+  background-color: rgba(255, 255, 255, 0.02);
+  color: #9e9e9e;
+}
+
+[data-theme="dark"] .expenses-project-add-expense-button {
+  background: #1e88e5;
+  box-shadow: 0 2.0px 4px rgba(30, 136, 229, 0.3);
+}
+
+[data-theme="dark"] .expenses-project-add-expense-button:hover {
+  background: #1565c0;
+}
+
+[data-theme="dark"] .expenses-project-table-container {
+  background-color: #222836;
+  box-shadow: 0 1.0px 3px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .expenses-project-table th {
+  background: #25304b;
+  color: #9e9e9e;
+  border-bottom-color: #2e2e2e;
+}
+
+[data-theme="dark"] .expenses-project-table td {
+  border-bottom-color: #2e2e2e;
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .expenses-project-table-row:hover {
+  background: rgb(31, 34, 53);
+}
+
+[data-theme="dark"] .expense-date-icon {
+  color: #1e88e5;
+}
+
+[data-theme="dark"] .expenses-project-amount {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .expenses-project-category {
+  background: #2e2e2e;
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .expenses-project-category:hover {
+  background: #3e3e3e;
+}
+
+[data-theme="dark"] .expenses-project-total-row {
+  background: #25304b;
+}
+
+[data-theme="dark"] .expenses-project-total-row td {
+  border-top-color: #2e2e2e;
+}
+
+[data-theme="dark"] .expenses-project-total-amount {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .expenses-project-expense-card {
+  background: #222836;
+  border-color: #2e2e2e;
+  box-shadow: 0 2.0px 4px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .expenses-project-expense-card:hover {
+  box-shadow: 0 0.57rem 1.14rem rgba(0, 0, 0, 0.4);
+  border-color: #3e3e3e;
+}
+
+[data-theme="dark"] .expenses-project-expense-header h4 {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .expenses-project-expense-amount {
+  color: #ffffff;
+  background: rgba(30, 136, 229, 0.2);
+}
+
+[data-theme="dark"] .expenses-project-expense-detail {
+  color: #b0b0b0;
+}
+
+[data-theme="dark"] .expenses-project-expense-detail svg {
+  color: #1e88e5;
+}
+
+[data-theme="dark"] .expenses-project-expense-notes {
+  border-top-color: #3e3e3e;
+  color: #9e9e9e;
+}
+
+[data-theme="dark"] .expenses-project-summary {
+  background: #25304b;
+  border-top-color: #2e2e2e;
+}
+
+[data-theme="dark"] .expenses-project-summary-item {
+  background: rgb(37, 43, 66);
+  box-shadow: 0 1.0px 3px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .expenses-project-summary-value {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .expenses-project-summary-value.expenses-project-over-budget {
+  color: #ff5252;
+  background: rgba(239, 83, 80, 0.1);
+}
+
+[data-theme="dark"] .expenses-project-warning-icon {
+  color: #ff5252;
+}
+
+[data-theme="dark"] .expenses-project-message {
+  background: #1e1e1e;
+  color: #b0b0b0;
+  box-shadow: 0 2.0px 5px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .expenses-project-error {
+  color: #ff5252;
+  background: rgba(239, 83, 80, 0.1);
+  border-left-color: #ff5252;
+}
+
+/* Expenses Project Container */
+.expenses-project-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  padding: 1.21rem;
+  max-width: 96.4rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9; /* Subtle background */
+  border-radius: 0.86rem;
+  box-shadow: 0 2.0px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Header Styles */
+.expenses-project-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.82rem;
+  gap: 1.21rem;
+  border-bottom: 1.0px solid #eee; /* Add border for visual separation */
+  padding-bottom: 1.21rem;
+}
+
+.expenses-project-header-left {
+  flex: 1;
+  min-width: 16.1rem;
+}
+
+.expenses-project-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  color: #2c3e50;
+  margin-bottom: 1.21rem;
+  position: relative;
+  padding-left: 0.71rem;
+}
+
+.expenses-project-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10%;
+  height: 80%;
+  width: 0.286rem;
+  background-color: #3498db;
+  border-radius: 2.0px;
+}
+
+.expenses-project-title-icon {
+  margin-right: 1.07rem;
+  color: #3498db;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-0.71rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Stats Container */
+.expenses-project-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.07rem;
+  margin-top: 1.21rem;
+}
+
+.expenses-project-stat-card {
+  flex: 1;
+  min-width: 8.0rem;
+  background: white;
+  border-radius: 0.71rem;
+  padding: 1.29rem;
+  box-shadow: 0 0.286rem 0.429rem rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-left: 0.286rem solid #3498db;
+}
+
+.expenses-project-stat-card:hover {
+  transform: translateY(-0.214rem);
+  box-shadow: 0 0.71rem 1.43rem rgba(0, 0, 0, 0.1);
+}
+
+.expenses-project-stat-card:nth-child(2) {
+  border-left-color: #2ecc71;
+}
+
+.expenses-project-stat-card:nth-child(3) {
+  border-left-color: #f1c40f;
+}
+
+.expenses-project-stat-icon {
+  font-size: 1.12rem;
+  margin-right: 1.07rem;
+  color: #fff;
+  background: #3498db;
+  padding: 0.86rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.286rem 0.429rem rgba(52, 152, 219, 0.3);
+}
+
+.expenses-project-stat-card:nth-child(2) .expenses-project-stat-icon {
+  background: #2ecc71;
+  box-shadow: 0 0.286rem 0.429rem rgba(46, 204, 113, 0.3);
+}
+
+.expenses-project-stat-card:nth-child(3) .expenses-project-stat-icon {
+  background: #f1c40f;
+  box-shadow: 0 0.286rem 0.429rem rgba(241, 196, 15, 0.3);
+}
+
+.expenses-project-stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.expenses-project-stat-number {
+  font-size: 1.00rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 0.357rem;
+}
+
+.expenses-project-stat-label {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Actions */
+.expenses-project-actions {
+  display: flex;
+  gap: 1.07rem;
+  align-items: center;
+}
+
+.expenses-project-view-toggle-group {
+  display: flex;
+  background: #f5f7fa;
+  border-radius: 0.57rem;
+  overflow: hidden;
+  box-shadow: 0 2.0px 4px rgba(0, 0, 0, 0.05);
+}
+
+.expenses-project-view-toggle {
+  padding: 0.71rem 1.21rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.57rem;
+  color: #7f8c8d;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.expenses-project-view-toggle:hover {
+  color: #3498db;
+  background-color: rgba(52, 152, 219, 0.05);
+}
+
+.expenses-project-view-toggle.expenses-project-active {
+  background: #3498db;
+  color: white;
+}
+
+.expenses-project-view-toggle.expenses-project-active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.214rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.expenses-project-manage-button {
+  padding: 0.71rem 1.21rem;
+  background: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 0.57rem;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.57rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2.0px 5px rgba(46, 204, 113, 0.3);
+}
+
+.expenses-project-manage-button:hover {
+  background: #27ae60;
+  transform: translateY(-2.0px);
+  box-shadow: 0 0.286rem 0.57rem rgba(46, 204, 113, 0.4);
+}
+
+.expenses-project-manage-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2.0px 3px rgba(46, 204, 113, 0.4);
+}
+
+/* Controls */
+.expenses-project-controls {
+  margin-bottom: 1.82rem;
+}
+
+.expenses-project-search-container {
+  position: relative;
+  max-width: 32.1rem;
+  width: 100%;
+}
+
+.expenses-project-search-icon {
+  position: absolute;
+  left: 1.07rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #7f8c8d;
+  transition: color 0.2s;
+}
+
+.expenses-project-search-input {
+  width: 100%;
+  padding: 0.86rem 1.07rem 12px 45px;
+  border: 1.0px solid #ddd;
+  border-radius: 0.57rem;
+  font-size: 0.75rem;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.expenses-project-search-input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 0.214rem rgba(52, 152, 219, 0.2);
+}
+
+.expenses-project-search-input:focus + .expenses-project-search-icon {
+  color: #3498db;
+}
+
+/* Empty State */
+.expenses-project-empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 16.1rem;
+  text-align: center;
+  background: white;
+  border-radius: 0.71rem;
+  padding: 1.68rem;
+  margin: 1.82rem 0;
+  box-shadow: 0 2.0px 8px rgba(0, 0, 0, 0.05);
+  border: 1.0px dashed #ddd;
+}
+
+.expenses-project-empty-content {
+  max-width: 21.4rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.expenses-project-empty-icon {
+  font-size: 2.10rem;
+  color: #bdc3c7;
+  margin-bottom: 1.21rem;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+.expenses-project-empty-state h3 {
+  color: #2c3e50;
+  margin-bottom: 0.71rem;
+  font-size: 1.12rem;
+}
+
+.expenses-project-empty-state p {
+  color: #7f8c8d;
+  margin-bottom: 1.21rem;
+}
+
+.expenses-project-add-button {
+  padding: 0.86rem 1.52rem;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 0.57rem;
+  cursor: pointer;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.57rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2.0px 5px rgba(52, 152, 219, 0.3);
+}
+
+.expenses-project-add-button:hover {
+  background: #2980b9;
+  transform: translateY(-2.0px);
+  box-shadow: 0 0.286rem 0.57rem rgba(52, 152, 219, 0.4);
+}
+
+.expenses-project-add-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2.0px 3px rgba(52, 152, 219, 0.4);
+}
+
+/* Project Card */
+.expenses-project-content {
+  height: 52.0vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #bdc3c7 #f1f1f1;
+  padding: 1rem;
+  border-radius: 0.57rem;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.expenses-project-content::-webkit-scrollbar {
+  width: 0.57rem;
+}
+
+.expenses-project-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 0.57rem;
+}
+
+.expenses-project-content::-webkit-scrollbar-thumb {
+  background-color: #bdc3c7;
+  border-radius: 0.57rem;
+}
+
+.expenses-project-content::-webkit-scrollbar-thumb:hover {
+  background: #a6a6a6;
+}
+
+.expenses-project-card {
+  background: white;
+  border-radius: 0.71rem;
+  box-shadow: 0 0.286rem 0.429rem rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.82rem;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1.0px solid #eee;
+}
+
+.expenses-project-card:hover {
+  transform: translateY(-0.357rem);
+  box-shadow: 0 0.86rem 1.71rem rgba(0, 0, 0, 0.1);
+}
+
+.expenses-project-card-header {
+  padding: 1.21rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+  border-bottom: 1.0px solid #eee;
+}
+
+.expenses-project-card-title {
+  margin-bottom: 1.07rem;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.57rem;
+}
+
+.expenses-project-card-title h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.10rem;
+}
+
+.expenses-project-agency {
+  font-size: 0.75rem;
+  color: #7f8c8d;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.214rem 0.57rem;
+  border-radius: 0.286rem;
+}
+
+.expenses-project-budget-info {
+  margin-top: 1.07rem;
+}
+
+.expenses-project-budget-amount {
+  display: flex;
+  align-items: center;
+  gap: 0.57rem;
+  font-size: 0.80rem;
+  margin-bottom: 0.71rem;
+  color: #4a5568;
+}
+
+.expenses-project-progress-container {
+  width: 100%;
+  height: 1.21rem;
+  background: #e2e8f0;
+  border-radius: 0.71rem;
+  overflow: hidden;
+  box-shadow: inset 0 1.0px 3px rgba(0, 0, 0, 0.1);
+}
+
+.expenses-project-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #3498db 0%, #2980b9 100%);
+  border-radius: 0.71rem;
+  position: relative;
+  transition: width 0.8s ease;
+  animation: shimmer 2s infinite linear;
+  background-size: 200% 100%;
+}
+
+@keyframes shimmer {
+  0% { background-position: 100% 0; }
+  100% { background-position: 0 0; }
+}
+
+.expenses-project-progress-bar.expenses-project-over-budget {
+  background: linear-gradient(90deg, #e74c3c 0%, #c0392b 100%);
+}
+
+.expenses-project-progress-text {
+  position: absolute;
+  right: 0.57rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-shadow: 0 1.0px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* No Expenses */
+.expenses-project-no-expenses {
+  padding: 1.82rem;
+  text-align: center;
+  color: #7f8c8d;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 0.57rem;
+  margin: 1.07rem;
+}
+
+.expenses-project-no-expenses p {
+  margin-bottom: 1.07rem;
+  font-size: 0.90rem;
+}
+
+.expenses-project-add-expense-button {
+  padding: 0.57rem 1.21rem;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 0.429rem;
+  cursor: pointer;
+  font-size: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.57rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2.0px 4px rgba(52, 152, 219, 0.3);
+}
+
+.expenses-project-add-expense-button:hover {
+  background: #2980b9;
+  transform: translateY(-2.0px);
+  box-shadow: 0 0.286rem 0.57rem rgba(52, 152, 219, 0.4);
+}
+
+/* Table View */
+.expenses-project-table-container {
+  overflow-x: auto;
+  padding: 0 1.21rem;
+  margin: 1.07rem 0;
+  border-radius: 0.57rem;
+  background-color: white;
+  box-shadow: 0 1.0px 3px rgba(0, 0, 0, 0.05);
+}
+
+.expenses-project-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.75rem;
+}
+
+.expenses-project-table th {
+  background: #f8fafc;
+  color: #64748b;
+  font-weight: 500;
+  text-align: left;
+  padding: 1.07rem;
+  border-bottom: 2.0px solid #e2e8f0;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.expenses-project-table td {
+  padding: 1.07rem;
+  border-bottom: 1.0px solid #e2e8f0;
+  vertical-align: middle;
+}
+
+.expenses-project-table-row {
+  transition: background 0.2s;
+}
+
+.expenses-project-table-row:hover {
+  background: #f8fafc;
+}
+
+.expense-date-icon {
+  margin-right: 0.71rem;
+  color: #3498db;
+}
+
+.expenses-project-amount {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.expenses-project-category {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.57rem;
+  background: #f0f4f8;
+  padding: 0.286rem 0.71rem;
+  border-radius: 1.43rem;
+  font-size: 0.75rem;
+  width: fit-content;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.expenses-project-category:hover {
+  background: #e6eef7;
+}
+
+.expenses-project-total-row {
+  font-weight: 500;
+  background: #f8fafc;
+}
+
+.expenses-project-total-row td {
+  padding: 1.07rem;
+  border-top: 2.0px solid #e2e8f0;
+}
+
+.expenses-project-total-amount {
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 0.90rem;
+}
+
+/* Cards View */
+.expenses-project-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22.9rem, 1fr));
+  gap: 1.21rem;
+  padding: 1.21rem;
+}
+
+.expenses-project-expense-card {
+  background: white;
+  border-radius: 0.57rem;
+  box-shadow: 0 2.0px 4px rgba(0, 0, 0, 0.05);
+  padding: 1.21rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1.0px solid #eee;
+}
+
+.expenses-project-expense-card:hover {
+  transform: translateY(-0.357rem);
+  box-shadow: 0 0.57rem 1.14rem rgba(0, 0, 0, 0.1);
+  border-color: #e2e8f0;
+}
+
+.expenses-project-expense-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.07rem;
+  padding-bottom: 0.86rem;
+  border-bottom: 1.0px solid #eee;
+}
+
+.expenses-project-expense-header h4 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 0.90rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-word;
+  max-width: 70%;
+}
+
+.expenses-project-expense-amount {
+  font-weight: bold;
+  color: #2c3e50;
+  background: rgba(52, 152, 219, 0.1);
+  padding: 0.357rem 0.71rem;
+  border-radius: 0.429rem;
+  font-size: 0.80rem;
+}
+
+.expenses-project-expense-details {
+  display: grid;
+  gap: 0.86rem;
+}
+
+.expenses-project-expense-detail {
+  display: flex;
+  align-items: center;
+  gap: 0.71rem;
+  font-size: 0.75rem;
+  color: #4a5568;
+}
+
+.expenses-project-expense-detail svg {
+  color: #3498db;
+  flex-shrink: 0;
+}
+
+.expenses-project-expense-notes {
+  margin-top: 1.07rem;
+  padding-top: 0.86rem;
+  border-top: 1.0px dashed #eee;
+  font-size: 0.75rem;
+  color: #64748b;
+  line-height: 1.00.5;
+}
+
+.expenses-project-expense-notes p {
+  margin: 0;
+}
+
+/* Summary */
+.expenses-project-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14.3rem, 1fr));
+  gap: 1.07rem;
+  padding: 1.21rem;
+  background: #f8fafc;
+  border-top: 1.0px solid #eee;
+  border-bottom-left-radius: 0.71rem;
+  border-bottom-right-radius: 0.71rem;
+}
+
+.expenses-project-summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.71rem;
+  font-size: 0.80rem;
+  background: white;
+  padding: 0.86rem;
+  border-radius: 0.57rem;
+  box-shadow: 0 1.0px 3px rgba(0, 0, 0, 0.05);
+}
+
+.expenses-project-summary-value {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.expenses-project-summary-value.expenses-project-over-budget {
+  color: #e74c3c;
+  display: flex;
+  align-items: center;
+  gap: 0.357rem;
+  background: rgba(231, 76, 60, 0.1);
+  padding: 0.214rem 0.57rem;
+  border-radius: 0.286rem;
+}
+
+.expenses-project-warning-icon {
+  color: #e74c3c;
+}
+
+/* Messages */
+.expenses-project-message {
+  padding: 1.21rem;
+  text-align: center;
+  color: #7f8c8d;
+  background: white;
+  border-radius: 0.57rem;
+  margin: 1.21rem;
+  box-shadow: 0 2.0px 5px rgba(0, 0, 0, 0.05);
+}
+
+.expenses-project-error {
+  color: #e74c3c;
+  background: #fee2e2;
+  border-radius: 0.57rem;
+  border-left: 0.286rem solid #e74c3c;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 64.3rem) {
+  .expenses-project-cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(20.0rem, 1fr));
+  }
+  
+  .expenses-project-stat-card {
+    min-width: 7.5rem;
+  }
+}
+
+@media (max-width: 53.1rem) {
+  .expenses-project-header {
+    padding-bottom: 1.07rem;
+  }
+  
+  .expenses-project-title {
+    font-size: 1.20rem;
+  }
+  
+  .expenses-project-stat-number {
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 41.1rem) {
+  .expenses-project-container {
+    padding: 1.07rem;
+  }
+  
+  .expenses-project-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .expenses-project-actions {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0.71rem;
+  }
+  
+  .expenses-project-stats {
+    gap: 0.71rem;
+    width: 100%;
+  }
+  
+  .expenses-project-stat-card {
+    min-width: calc(50% - 0.71rem);
+  }
+  
+  .expenses-project-summary {
+    grid-template-columns: 1fr;
+  }
+  
+  .expenses-project-search-container {
+    max-width: 100%;
+  }
+  
+  .expenses-project-expense-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.71rem;
+  }
+  
+  .expenses-project-expense-header h4 {
+    max-width: 100%;
+  }
+  
+  .expenses-project-card-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .expenses-project-agency {
+    margin-left: 0;
+    margin-top: 0.357rem;
+  }
+}
+
+@media (max-width: 30.9rem) {
+  .expenses-project-container {
+    padding: 0.71rem;
+  }
+  
+  .expenses-project-title {
+    font-size: 1.12rem;
+  }
+  
+  .expenses-project-stat-card {
+    min-width: 100%;
+  }
+  
+  .expenses-project-cards-grid {
+    grid-template-columns: 1fr;
+    padding: 0.71rem;
+  }
+  
+  .expenses-project-table th, 
+  .expenses-project-table td {
+    padding: 0.71rem;
+    font-size: 0.75rem;
+  }
+  
+  .expenses-project-table-container {
+    padding: 0 0.71rem;
+  }
+  
+  .expenses-project-expense-card {
+    padding: 1.07rem;
+  }
+  
+  .expenses-project-view-toggle {
+    padding: 0.57rem 1.07rem;
+    font-size: 0.75rem;
+  }
+  
+  .expenses-project-manage-button {
+    padding: 0.57rem 1.07rem;
+    font-size: 0.75rem;
+  }
+  
+  .expenses-project-progress-container {
+    height: 1.14rem;
+  }
+  
+  .expenses-project-progress-text {
+    font-size: 0.75rem;
+  }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+  .expenses-project-stat-card,
+  .expenses-project-card,
+  .expenses-project-expense-card,
+  .expenses-project-manage-button,
+  .expenses-project-add-button,
+  .expenses-project-add-expense-button {
+    transition: none;
+  }
+  
+  .expenses-project-progress-bar {
+    animation: none;
+  }
+  
+  .expenses-project-empty-icon {
+    animation: none;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* High contrast improvements for accessibility */
+@media (forced-colors: active) {
+  .expenses-project-progress-bar,
+  .expenses-project-stat-icon,
+  .expenses-project-manage-button,
+  .expenses-project-add-button,
+  .expenses-project-view-toggle.expenses-project-active,
+  .expenses-project-add-expense-button {
+    border: 1.0px solid;
+  }
+}

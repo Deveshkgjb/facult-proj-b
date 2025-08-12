@@ -1,0 +1,270 @@
+/* Dark Mode Styles */
+[data-theme="dark"] .expenses-add-container {
+    background-color: #1a1f2c;
+    color: #e0e3e9;
+    box-shadow: 0 0 1.43rem rgba(0, 0, 0, 0.3);
+  }
+  
+  [data-theme="dark"] .expenses-add-header {
+    border-bottom-color: #2d3441;
+  }
+  
+  [data-theme="dark"] .expenses-add-title {
+    color: #f5f7fa;
+  }
+  
+  [data-theme="dark"] .expenses-back-btn {
+    background-color: #2d3441;
+    border-color: #3a4252;
+    color: #e0e3e9;
+  }
+  
+  [data-theme="dark"] .expenses-back-btn:hover {
+    background-color: #3a4252;
+  }
+  
+  [data-theme="dark"] .expenses-message.success {
+    background-color: #1f3a1f;
+    color: #81c784;
+    border-color: #66bb6a;
+  }
+  
+  [data-theme="dark"] .expenses-message.error {
+    background-color: #3a1f1f;
+    color: #ff7d7d;
+    border-color: #ff5252;
+  }
+  
+  [data-theme="dark"] .expenses-form-section {
+    background-color: #232a38;
+    box-shadow: 0 2.0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  [data-theme="dark"] .expenses-section-title {
+    color: #d0d4dc;
+    border-bottom-color: #3a4252;
+  }
+  
+  [data-theme="dark"] .expenses-form-label {
+    color: #d0d4dc;
+  }
+  
+  [data-theme="dark"] .expenses-form-input,
+  [data-theme="dark"] .expenses-form-select {
+    background-color: #2d3441;
+    border-color: #3a4252;
+    color: #e0e3e9;
+  }
+  
+  [data-theme="dark"] .expenses-form-input:focus,
+  [data-theme="dark"] .expenses-form-select:focus {
+    border-color: #4d7cff;
+    box-shadow: 0 0 0 0.2rem rgba(77, 124, 255, 0.3);
+  }
+  
+  [data-theme="dark"] .expenses-form-select {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a0a4ab' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  }
+  
+  [data-theme="dark"] .expenses-input-icon {
+    color: #a0a4ab;
+  }
+  
+  [data-theme="dark"] .expenses-submit-btn {
+    background-color: #2e7d32;
+  }
+  
+  [data-theme="dark"] .expenses-submit-btn:hover {
+    background-color: #3a8a40;
+  }
+  
+  [data-theme="dark"] .expenses-submit-btn:disabled {
+    background-color: #4b5563;
+  }
+/* Base Styles */
+.expenses-add-container {
+    max-width: 42.9rem;
+    margin: 1.60rem auto;
+    padding: 1.60rem;
+    background: #fff;
+    border-radius: 0.71rem;
+    box-shadow: 0 0 1.43rem rgba(0, 0, 0, 0.08);
+}
+
+/* Header Styles */
+.expenses-add-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1.0px solid #eee;
+}
+
+.expenses-add-title {
+    font-size: 1.20rem;
+    color: #2c3e50;
+    margin-left: 1rem;
+    flex-grow: 1;
+}
+
+.expenses-back-btn {
+    background: #f8f9fa;
+    border: 1.0px solid #ddd;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 0.357rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.expenses-back-btn:hover {
+    background: #e9ecef;
+    border-color: #adb5bd;
+}
+
+/* Message Styles */
+.expenses-message {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.357rem;
+    font-weight: 500;
+}
+
+.expenses-message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1.0px solid #c3e6cb;
+}
+
+.expenses-message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1.0px solid #f5c6cb;
+}
+
+/* Form Styles */
+.expenses-add-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.expenses-form-section {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 0.57rem;
+    box-shadow: 0 2.0px 5px rgba(0, 0, 0, 0.05);
+}
+
+.expenses-section-title {
+    font-size: 0.90rem;
+    color: #495057;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1.0px solid #dee2e6;
+}
+
+.expenses-form-row {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.expenses-form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.expenses-form-label {
+    font-weight: 500;
+    color: #495057;
+    font-size: 0.75rem;
+}
+
+.expenses-form-input,
+.expenses-form-select {
+    padding: 0.75rem 1rem;
+    border: 1.0px solid #ced4da;
+    border-radius: 0.357rem;
+    font-size: 0.75rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    width: 100%;
+    max-width: 16.1rem;
+}
+
+.expenses-form-input:focus,
+.expenses-form-select:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.expenses-form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+
+.expenses-input-with-icon {
+    position: relative;
+}
+
+.expenses-input-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+}
+
+.expenses-input-with-icon .expenses-form-input {
+    padding-left: 2.5rem;
+}
+
+/* Form Actions */
+.expenses-form-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.expenses-submit-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.357rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.expenses-submit-btn:hover {
+    background: #218838;
+}
+
+.expenses-submit-btn:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 41.1rem) {
+    .expenses-form-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .expenses-add-container {
+        padding: 1.5rem;
+    }
+}

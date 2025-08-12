@@ -1,0 +1,368 @@
+/* Dark Theme Styles */
+[data-theme="dark"] .meeting-notes-container {
+  background-color: #1a1f2c;
+  box-shadow: 0 2.0px 10px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .meeting-notes-header {
+  background-color: #18223c;
+  border-bottom-color: #444;
+}
+
+[data-theme="dark"] .meeting-notes-header h2 {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .meeting-notes-subtitle {
+  color: #9e9e9e;
+}
+
+[data-theme="dark"] .meeting-notes-list {
+  background-color: #1a1f2c;
+}
+
+[data-theme="dark"] .meeting-notes-loading,
+[data-theme="dark"] .meeting-notes-empty {
+  color: #9e9e9e;
+}
+
+[data-theme="dark"] .meeting-notes-empty img {
+  opacity: 0.4;
+}
+
+[data-theme="dark"] .meeting-notes-date {
+  color: #9e9e9e;
+}
+
+[data-theme="dark"] .meeting-notes-date::before,
+[data-theme="dark"] .meeting-notes-date::after {
+  background-color: #444;
+}
+
+[data-theme="dark"] .meeting-notes-avatar {
+  background-color: #64b5f6;
+  color: #121212;
+}
+
+[data-theme="dark"] .meeting-notes-sender {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .meeting-notes-received .meeting-notes-content {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+  box-shadow: 0 1.0px 3px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .meeting-notes-sent .meeting-notes-content {
+  background-color: #64b5f6;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .meeting-notes-received .meeting-notes-time {
+  color: #9e9e9e;
+}
+
+[data-theme="dark"] .meeting-notes-input-container {
+  background-color: #1a1f2c;
+  border-top-color: #444;
+}
+
+[data-theme="dark"] .meeting-notes-input {
+  background-color: #202c49;
+}
+
+[data-theme="dark"] .meeting-notes-textarea {
+  background-color: transparent;
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .meeting-notes-textarea::placeholder {
+  color: #757575;
+}
+
+[data-theme="dark"] .meeting-notes-send-button {
+  background-color: #64b5f6;
+}
+
+[data-theme="dark"] .meeting-notes-send-button:disabled {
+  background-color: #555;
+}
+
+[data-theme="dark"] .meeting-notes-send-button:not(:disabled):hover {
+  background-color: #42a5f5;
+}
+
+[data-theme="dark"] .meeting-notes-hint {
+  color: #757575;
+}
+
+/* Scrollbar for dark theme */
+[data-theme="dark"] .meeting-notes-list::-webkit-scrollbar {
+  width: 0.429rem;
+}
+
+[data-theme="dark"] .meeting-notes-list::-webkit-scrollbar-track {
+  background: #2d2d2d;
+}
+
+[data-theme="dark"] .meeting-notes-list::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+[data-theme="dark"] .meeting-notes-list::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+/* Main Container */
+.meeting-notes-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: #f8f9fa;
+  border-radius: 0.86rem;
+  overflow: hidden;
+  box-shadow: 0 2.0px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+.meeting-notes-header {
+  padding: 1.21rem;
+  background-color: #ffffff;
+  border-bottom: 1.0px solid #e9ecef;
+}
+
+.meeting-notes-header h2 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.12rem;
+  font-weight: 600;
+}
+
+.meeting-notes-subtitle {
+  margin: 0.286rem 0 0;
+  color: #7f8c8d;
+  font-size: 0.75rem;
+}
+
+/* Messages List */
+.meeting-notes-list {
+  flex: 1;
+  padding: 1.14rem;
+  overflow-y: auto;
+  background-color: #f8f9fa;
+  scrollbar-width: none;
+}
+
+.meeting-notes-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #7f8c8d;
+}
+
+.meeting-notes-spinner {
+  border: 0.214rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 0.214rem solid #3498db;
+  width: 1.82rem;
+  height: 1.82rem;
+  animation: spin 1s linear infinite;
+  margin-bottom: 0.71rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.meeting-notes-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #7f8c8d;
+  text-align: center;
+}
+
+.meeting-notes-empty img {
+  width: 6.4rem;
+  margin-bottom: 1.14rem;
+  opacity: 0.6;
+}
+
+/* Message Group */
+.meeting-notes-group {
+  margin-bottom: 1.46rem;
+}
+
+.meeting-notes-date {
+  display: flex;
+  align-items: center;
+  margin: 1.14rem 0;
+  color: #7f8c8d;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.meeting-notes-date::before,
+.meeting-notes-date::after {
+  content: "";
+  flex: 1;
+  height: 1.0px;
+  background-color: #e9ecef;
+  margin: 0 0.71rem;
+}
+
+/* Message Item */
+.meeting-notes-item {
+  display: flex;
+  margin-bottom: 0.86rem;
+}
+
+.meeting-notes-sent {
+  justify-content: flex-end;
+}
+
+.meeting-notes-received {
+  justify-content: flex-start;
+}
+
+.meeting-notes-avatar {
+  width: 1.94rem;
+  height: 1.94rem;
+  border-radius: 50%;
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 0.71rem;
+  flex-shrink: 0;
+  text-transform: uppercase;
+}
+
+.meeting-notes-content-wrapper {
+  max-width: 70%;
+}
+
+.meeting-notes-sender {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.286rem;
+}
+
+.meeting-notes-content {
+  position: relative;
+  padding: 0.86rem 1.14rem;
+  border-radius: 0.86rem;
+  line-height: 1.00.4;
+  word-break: break-word;
+}
+
+.meeting-notes-sent .meeting-notes-content {
+  background-color: #3498db;
+  color: white;
+  border-top-right-radius: 0.286rem;
+}
+
+.meeting-notes-received .meeting-notes-content {
+  background-color: white;
+  color: #2c3e50;
+  border-top-left-radius: 0.286rem;
+  box-shadow: 0 1.0px 3px rgba(0, 0, 0, 0.08);
+}
+
+.meeting-notes-text {
+  white-space: pre-wrap;
+  margin: 0;
+  word-break: break-word;
+}
+
+.meeting-notes-time {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  margin-top: 0.429rem;
+  opacity: 0.8;
+}
+
+.meeting-notes-sent .meeting-notes-time {
+  color: rgba(255, 255, 255, 0.8);
+  justify-content: flex-end;
+}
+
+.meeting-notes-received .meeting-notes-time {
+  color: #7f8c8d;
+}
+
+.meeting-notes-time svg {
+  margin-right: 0.286rem;
+}
+
+/* Input Area */
+.meeting-notes-input-container {
+  padding: 1.14rem;
+  background-color: white;
+  border-top: 1.0px solid #e9ecef;
+}
+
+.meeting-notes-input {
+  display: flex;
+  align-items: flex-end;
+  background-color: #f8f9fa;
+  border-radius: 1.71rem;
+  padding: 0.57rem 0.86rem;
+}
+
+.meeting-notes-textarea {
+  flex: 1;
+  border: none;
+  background: transparent;
+  resize: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 0.80rem;
+  padding: 0.57rem 0.86rem;
+  max-height: 6.4rem;
+  line-height: 1.00.4;
+  white-space: pre-wrap;
+  min-height: 2.1rem;
+}
+
+.meeting-notes-send-button {
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-left: 0.57rem;
+}
+
+.meeting-notes-send-button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.meeting-notes-send-button:not(:disabled):hover {
+  background-color: #2980b9;
+  transform: translateY(-1.0px);
+}
+
+.meeting-notes-hint {
+  font-size: 0.75rem;
+  color: #95a5a6;
+  margin: 0.429rem 0 0 0.86rem;
+}

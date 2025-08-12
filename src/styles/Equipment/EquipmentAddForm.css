@@ -1,0 +1,520 @@
+/* Dark Mode Styles */
+[data-theme="dark"] .expenses-equipment-container {
+  background-color: #1a1f2c;
+  color: #e0e3e9;
+}
+
+[data-theme="dark"] .expenses-back-btn {
+  background-color: #2d3441;
+  border-color: #3a4252;
+  color: #e0e3e9;
+}
+
+[data-theme="dark"] .expenses-back-btn:hover {
+  background-color: #3a4252;
+}
+
+[data-theme="dark"] .expenses-equipment-title {
+  color: #f5f7fa;
+}
+
+[data-theme="dark"] .expenses-message.success {
+  background-color: #1f3a1f;
+  color: #81c784;
+  border-color: #66bb6a;
+}
+
+[data-theme="dark"] .expenses-message.error {
+  background-color: #3a1f1f;
+  color: #ff7d7d;
+  border-color: #ff5252;
+}
+
+[data-theme="dark"] .expenses-equipment-list-container,
+[data-theme="dark"] .expenses-equipment-form-container {
+  background-color: #232a38;
+  box-shadow: 0 2.0px 5px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .expenses-search-input {
+  background-color: #2d3441;
+  border-color: #3a4252;
+  color: #e0e3e9;
+}
+
+[data-theme="dark"] .expenses-search-input:focus {
+  border-color: #4d7cff;
+  box-shadow: 0 0 0 0.2rem rgba(77, 124, 255, 0.3);
+}
+
+[data-theme="dark"] .expenses-search-icon {
+  color: #a0a4ab;
+}
+
+[data-theme="dark"] .expenses-list-title {
+  color: #d0d4dc;
+  border-bottom-color: #3a4252;
+}
+
+[data-theme="dark"] .expenses-equipment-item {
+  background-color: #2d3441;
+  border-color: #3a4252;
+}
+
+[data-theme="dark"] .expenses-equipment-item:hover {
+  background-color: #3a4252;
+}
+
+[data-theme="dark"] .expenses-equipment-item.active {
+  background-color: #1e3a8a;
+  border-color: #4d7cff;
+}
+
+[data-theme="dark"] .expenses-equipment-item-name {
+  color: #f5f7fa;
+}
+
+[data-theme="dark"] .expenses-status-badge.available {
+  background-color: #1e3a1e;
+  color: #a5d6a7;
+}
+
+[data-theme="dark"] .expenses-status-badge.in-use {
+  background-color: #3a3a1e;
+  color: #ffecb3;
+}
+
+[data-theme="dark"] .expenses-status-badge.maintenance {
+  background-color: #3a1f1e;
+  color: #ffb3b3;
+}
+
+[data-theme="dark"] .expenses-status-badge.surrendered {
+  background-color: #3a3a3a;
+  color: #d0d4dc;
+}
+
+[data-theme="dark"] .expenses-equipment-price {
+  color: #81c784;
+}
+
+[data-theme="dark"] .expenses-section-title {
+  color: #d0d4dc;
+  border-bottom-color: #3a4252;
+}
+
+[data-theme="dark"] .expenses-form-label {
+  color: #d0d4dc;
+}
+
+[data-theme="dark"] .expenses-form-input,
+[data-theme="dark"] .expenses-form-select,
+[data-theme="dark"] .expenses-form-textarea {
+  background-color: #2d3441;
+  border-color: #3a4252;
+  color: #e0e3e9;
+}
+
+[data-theme="dark"] .expenses-form-input:focus,
+[data-theme="dark"] .expenses-form-select:focus,
+[data-theme="dark"] .expenses-form-textarea:focus {
+  border-color: #4d7cff;
+  box-shadow: 0 0 0 0.2rem rgba(77, 124, 255, 0.3);
+}
+
+[data-theme="dark"] .expenses-form-select {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a0a4ab' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+}
+
+[data-theme="dark"] .expenses-input-icon {
+  color: #a0a4ab;
+}
+
+[data-theme="dark"] .expenses-submit-btn {
+  background-color: #2e7d32;
+}
+
+[data-theme="dark"] .expenses-submit-btn:hover {
+  background-color: #3a8a40;
+}
+
+[data-theme="dark"] .expenses-delete-btn {
+  background-color: #c53030;
+}
+
+[data-theme="dark"] .expenses-delete-btn:hover {
+  background-color: #9b2c2c;
+}
+
+[data-theme="dark"] .expenses-cancel-btn {
+  background-color: #4b5563;
+}
+
+[data-theme="dark"] .expenses-cancel-btn:hover {
+  background-color: #3a4252;
+}
+
+/* Scrollbar styling for dark mode */
+[data-theme="dark"] .expenses-equipment-items::-webkit-scrollbar-track {
+  background: #2d3441;
+}
+
+[data-theme="dark"] .expenses-equipment-items::-webkit-scrollbar-thumb {
+  background: #4b5563;
+}
+
+[data-theme="dark"] .expenses-equipment-items::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Base Styles */
+.expenses-equipment-container {
+  max-width: 75.0rem;
+  margin: 1.60rem auto;
+  padding: 1.5rem;
+}
+
+.expenses-equipment-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.expenses-back-btn {
+  background: #f8f9fa;
+  border: 1.0px solid #ddd;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 0.357rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.expenses-back-btn:hover {
+  background: #e9ecef;
+  border-color: #adb5bd;
+}
+
+.expenses-equipment-title {
+  font-size: 1.20rem;
+  color: #2c3e50;
+  margin-left: 1rem;
+}
+
+/* Message Styles */
+.expenses-message {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.357rem;
+  font-weight: 500;
+}
+
+.expenses-message.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1.0px solid #c3e6cb;
+}
+
+.expenses-message.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1.0px solid #f5c6cb;
+}
+
+/* Content Layout */
+.expenses-equipment-content {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Equipment List Sidebar */
+.expenses-equipment-list-container {
+  flex: 0 0 25.0rem;
+  background: #f8f9fa;
+  border-radius: 0.57rem;
+  padding: 1.5rem;
+  box-shadow: 0 2.0px 5px rgba(0, 0, 0, 0.05);
+}
+
+.expenses-search-container {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.expenses-search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+
+.expenses-search-input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1.0px solid #ced4da;
+  border-radius: 0.357rem;
+  font-size: 0.75rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.expenses-search-input:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.expenses-list-title {
+  font-size: 0.90rem;
+  color: #495057;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1.0px solid #dee2e6;
+}
+
+.expenses-equipment-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 32.1rem;
+  overflow-y: auto;
+}
+
+.expenses-equipment-item {
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background: white;
+  border-radius: 0.357rem;
+  border: 1.0px solid #e9ecef;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.expenses-equipment-item:hover {
+  background: #f1f3f5;
+  border-color: #dee2e6;
+}
+
+.expenses-equipment-item.active {
+  background: #e7f5ff;
+  border-color: #d0ebff;
+}
+
+.expenses-equipment-item-name {
+  font-weight: 500;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.expenses-equipment-item-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.expenses-status-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 1.43rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.expenses-status-badge.available {
+  background: #d4edda;
+  color: #155724;
+}
+
+.expenses-status-badge.in-use {
+  background: #fff3bf;
+  color: #5f3f00;
+}
+
+.expenses-status-badge.maintenance {
+  background: #ffe8cc;
+  color: #862e00;
+}
+
+.expenses-status-badge.surrendered {
+  background: #f1f3f5;
+  color: #495057;
+}
+
+.expenses-equipment-price {
+  color: #28a745;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Form Section */
+.expenses-equipment-form-container {
+  flex: 1;
+  background: #f8f9fa;
+  border-radius: 0.57rem;
+  padding: 1.5rem;
+  box-shadow: 0 2.0px 5px rgba(0, 0, 0, 0.05);
+}
+
+.expenses-equipment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.expenses-section-title {
+  font-size: 0.90rem;
+  color: #495057;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1.0px solid #dee2e6;
+}
+
+.expenses-form-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.expenses-form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.expenses-form-label {
+  font-weight: 500;
+  color: #495057;
+  font-size: 0.75rem;
+}
+
+.expenses-form-input,
+.expenses-form-select,
+.expenses-form-textarea {
+  padding: 0.75rem 1rem;
+  border: 1.0px solid #ced4da;
+  border-radius: 0.357rem;
+  font-size: 0.75rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.expenses-form-input:focus,
+.expenses-form-select:focus,
+.expenses-form-textarea:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.expenses-form-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+
+.expenses-form-textarea {
+  min-height: 5.4rem;
+  resize: vertical;
+}
+
+.expenses-input-with-icon {
+  position: relative;
+}
+
+.expenses-input-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+
+.expenses-input-with-icon .expenses-form-input {
+  padding-left: 2.5rem;
+}
+
+/* Form Actions */
+.expenses-form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.expenses-submit-btn,
+.expenses-delete-btn,
+.expenses-cancel-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.357rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.expenses-submit-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+}
+
+.expenses-submit-btn:hover {
+  background: #218838;
+}
+
+.expenses-delete-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+}
+
+.expenses-delete-btn:hover {
+  background: #c82333;
+}
+
+.expenses-cancel-btn {
+  background: #6c757d;
+  color: white;
+  border: none;
+}
+
+.expenses-cancel-btn:hover {
+  background: #5a6268;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 54.9rem) {
+  .expenses-equipment-content {
+      flex-direction: column;
+  }
+  
+  .expenses-equipment-list-container {
+      flex: 1;
+  }
+}
+
+@media (max-width: 41.1rem) {
+  .expenses-form-row {
+      flex-direction: column;
+      gap: 1rem;
+  }
+  
+  .expenses-form-actions {
+      flex-direction: column;
+  }
+  
+  .expenses-submit-btn,
+  .expenses-delete-btn,
+  .expenses-cancel-btn {
+      width: 100%;
+      justify-content: center;
+  }
+}

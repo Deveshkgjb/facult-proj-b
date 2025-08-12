@@ -1,0 +1,405 @@
+[data-theme="dark"] .financebudgetlist-container{
+  background-color: #25304b;
+}
+[data-theme="dark"] .financebudgetlist-title{
+  color: white;
+}
+[data-theme="dark"] .financebudgetlist-table {
+  background-color: black;
+  color: white;
+}
+[data-theme="dark"] .financebudgetlist-table tbody tr td{
+  background-color: black;
+  color: white;
+}
+[data-theme="dark"] .financebudgetlist-table thead tr th{
+  color: white;
+  background-color: #171d2a;
+}
+/* Main Container */
+.financebudgetlist-container {
+  background-color: #ffffff;
+  border-radius: 0.86rem;
+  box-shadow: 0 0.286rem 1.07rem rgba(0, 0, 0, 0.08);
+  padding: 1.52rem;
+  margin: 1.52rem 0;
+  transition: all 0.3s ease;
+}
+
+/* Header */
+.financebudgetlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.52rem;
+  padding-bottom: 1.29rem;
+  border-bottom: 2.0px solid #e9ecef;
+}
+
+.financebudgetlist-title-container {
+  display: flex;
+  align-items: center;
+  gap: 1.00rem;
+}
+
+.financebudgetlist-title-icon {
+  color: #3498db;
+  font-size: 1.20rem;
+  background: rgba(52, 152, 219, 0.1);
+  padding: 0.71rem;
+  border-radius: 50%;
+  box-shadow: 0 2.0px 10px rgba(52, 152, 219, 0.2);
+}
+
+.financebudgetlist-title {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.financebudgetlist-add-edit-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.71rem 1.29rem;
+  border-radius: 0.429rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.71rem;
+  font-size: 0.80rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2.0px 5px rgba(52, 152, 219, 0.3);
+}
+
+.financebudgetlist-add-edit-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2.0px);
+  box-shadow: 0 0.286rem 0.57rem rgba(52, 152, 219, 0.4);
+}
+
+.financebudgetlist-add-edit-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2.0px 3px rgba(52, 152, 219, 0.3);
+}
+
+/* Error Message */
+.financebudgetlist-error {
+  color: #e74c3c;
+  background-color: #fdecea;
+  padding: 1.07rem 1.21rem;
+  border-radius: 0.57rem;
+  margin: 1.21rem 0;
+  border-left: 0.286rem solid #e74c3c;
+  font-weight: 500;
+  box-shadow: 0 2.0px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Empty State */
+.financebudgetlist-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.16rem 1.82rem;
+  text-align: center;
+  color: #7f8c8d;
+  background-color: #f9f9f9;
+  border-radius: 0.57rem;
+  border: 1.0px dashed #dee2e6;
+  margin: 1.21rem 0;
+}
+
+.financebudgetlist-empty-state p {
+  font-size: 0.90rem;
+  margin: 1.07rem 0;
+  color: #5d6d7e;
+}
+
+.financebudgetlist-add-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.86rem 1.21rem;
+  border-radius: 0.429rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.71rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2.0px 5px rgba(52, 152, 219, 0.3);
+}
+
+.financebudgetlist-add-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2.0px);
+  box-shadow: 0 0.286rem 0.57rem rgba(52, 152, 219, 0.4);
+}
+
+/* Table Container */
+.financebudgetlist-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.52rem;
+}
+
+.financebudgetlist-table-container {
+  width: 100%;
+  border-radius: 0.71rem;
+  box-shadow: 0 2.0px 15px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.financebudgetlist-table-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e0 #f8f9fa;
+}
+
+.financebudgetlist-table-scroll::-webkit-scrollbar {
+  height: 0.57rem;
+}
+
+.financebudgetlist-table-scroll::-webkit-scrollbar-track {
+  background: #f8f9fa;
+  border-radius: 0.71rem;
+}
+
+.financebudgetlist-table-scroll::-webkit-scrollbar-thumb {
+  background-color: #cbd5e0;
+  border-radius: 0.71rem;
+}
+
+/* Table Styles */
+.financebudgetlist-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.80rem;
+}
+
+.financebudgetlist-table th,
+.financebudgetlist-table td {
+  padding: 1.14rem 1.29rem;
+  text-align: left;
+  border-bottom: 1.0px solid #e9ecef;
+}
+
+.financebudgetlist-table th {
+  background-color: #f1f4f8;
+  font-weight: 600;
+  color: #2c3e50;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 1.0px 2px rgba(0, 0, 0, 0.05);
+}
+
+.financebudgetlist-table td {
+  font-size: 0.80rem;
+  color: #2c3e50;
+  transition: all 0.2s ease;
+}
+
+.financebudgetlist-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+
+/* Status Badges */
+.status-badge {
+  padding: 0.429rem 0.86rem;
+  border-radius: 1.43rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  min-width: 4.3rem;
+  box-shadow: 0 1.0px 3px rgba(0, 0, 0, 0.1);
+  text-transform: capitalize;
+}
+
+.status-badge.approved {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1.0px solid rgba(21, 87, 36, 0.1);
+}
+
+.status-badge.rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1.0px solid rgba(114, 28, 36, 0.1);
+}
+
+.status-badge.pending {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1.0px solid rgba(133, 100, 4, 0.1);
+}
+
+/* Total Row */
+.financebudgetlist-total-row {
+  background-color: #f1f6fa;
+  font-weight: 700;
+}
+
+.financebudgetlist-total-row td {
+  border-top: 2.0px solid #cbd5e0;
+  border-bottom: none !important;
+  color: #2c3e50;
+  padding: 1.29rem;
+}
+
+/* Summary Card */
+.financebudgetlist-summary {
+  margin-top: 1.52rem;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(0.71rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.financebudgetlist-summary-card {
+  background-color: #f8f9fa;
+  border-radius: 0.71rem;
+  padding: 1.52rem;
+  max-width: 24.1rem;
+  margin-left: auto;
+  box-shadow: 0 0.286rem 1.07rem rgba(0, 0, 0, 0.08);
+  border: 1.0px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.financebudgetlist-summary-card:hover {
+  box-shadow: 0 0.57rem 1.43rem rgba(0, 0, 0, 0.1);
+}
+
+.financebudgetlist-summary-card h3 {
+  margin-top: 0;
+  margin-bottom: 1.21rem;
+  color: #2c3e50;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-bottom: 2.0px solid #e9ecef;
+  padding-bottom: 0.86rem;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.86rem;
+  padding-bottom: 0.86rem;
+  border-bottom: 1.0px solid #e9ecef;
+  transition: all 0.2s ease;
+}
+
+.summary-row span:first-child {
+  color: #5d6d7e;
+  font-weight: 500;
+}
+
+.summary-row span:last-child {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.summary-row.total {
+  font-weight: 700;
+  border-bottom: none;
+  margin-top: 1.07rem;
+  padding-top: 1.07rem;
+  border-top: 2.0px solid #cbd5e0;
+  font-size: 0.90rem;
+}
+
+.summary-row.total span {
+  color: #2c3e50;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 53.1rem) {
+  .financebudgetlist-summary-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 41.1rem) {
+  .financebudgetlist-container {
+    padding: 1.21rem 1.07rem;
+  }
+  
+  .financebudgetlist-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.07rem;
+  }
+
+  .financebudgetlist-add-edit-btn {
+    align-self: flex-start;
+  }
+  
+  .financebudgetlist-table th,
+  .financebudgetlist-table td {
+    padding: 0.86rem 0.71rem;
+    font-size: 0.75rem;
+  }
+
+  .financebudgetlist-title {
+    font-size: 1.12rem;
+  }
+  
+  .status-badge {
+    padding: 0.286rem 0.57rem;
+    min-width: 3.2rem;
+  }
+}
+
+@media (max-width: 30.9rem) {
+  .financebudgetlist-title-icon {
+    font-size: 1.12rem;
+    padding: 0.57rem;
+  }
+  
+  .financebudgetlist-title {
+    font-size: 1.10rem;
+  }
+  
+  .financebudgetlist-empty-state {
+    padding: 1.82rem 1.07rem;
+  }
+  
+  .financebudgetlist-table th,
+  .financebudgetlist-table td {
+    padding: 0.71rem 0.57rem;
+    font-size: 0.75rem;
+  }
+  
+  .financebudgetlist-summary-card {
+    padding: 1.21rem 1.07rem;
+  }
+  
+  .financebudgetlist-summary-card h3 {
+    font-size: 0.90rem;
+    margin-bottom: 1.07rem;
+  }
+  
+  .summary-row {
+    margin-bottom: 0.71rem;
+    padding-bottom: 0.71rem;
+  }
+  
+  .summary-row.total {
+    font-size: 0.75rem;
+  }
+}

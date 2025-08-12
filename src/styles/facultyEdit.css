@@ -1,0 +1,104 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .faculty-page {
+    max-width: 64.3rem;
+    margin: 0 auto;
+    padding: 1.21rem;
+  }
+  
+  .faculty-dashboard-title {
+    font-size: 1.50rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.82rem;
+    color: #4a90e2;
+  }
+  
+  /* Section Titles */
+  .section-title {
+    font-size: 1.20rem;
+    font-weight: bold;
+    margin-bottom: 1.07rem;
+    color: #333;
+    text-decoration: underline;
+  }
+  
+  /* Input Fields */
+  .faculty-input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 1.07rem;
+    margin-bottom: 1.21rem;
+  }
+  
+  .input-field {
+    padding: 0.71rem;
+    font-size: 0.75rem;
+    border: 1.0px solid #ccc;
+    border-radius: 0.357rem;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #4a90e2;
+  }
+  
+  /* Buttons */
+  .button {
+    padding: 0.71rem 1.21rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 0.357rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #357abf;
+  }
+  
+  .delete-button {
+    background-color: #e94e4e;
+  }
+  
+  .delete-button:hover {
+    background-color: #d73b3b;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #e94e4e;
+    font-weight: bold;
+    margin-bottom: 1.21rem;
+  }
+  
+  /* User List */
+  .user-list-section {
+    margin-top: 1.82rem;
+  }
+  
+  .user-item {
+    padding: 1.07rem;
+    margin-bottom: 0.71rem;
+    border: 1.0px solid #ccc;
+    border-radius: 0.357rem;
+    background-color: #fff;
+    box-shadow: 0 2.0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-item p {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #555;
+  }
+  

@@ -1,0 +1,342 @@
+/* Dark Theme Styles */
+[data-theme="dark"] .leaves-form-container {
+  background-color: #1a1f2c;
+  box-shadow: 0 0.286rem 0.86rem rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .leaves-title,
+[data-theme="dark"] .leaves-subtitle {
+  color: #e0e3e7;
+}
+
+[data-theme="dark"] .leaves-back-btn {
+  color: #4d9fec;
+}
+
+[data-theme="dark"] .leaves-back-btn:hover {
+  background-color: #2a3142;
+}
+
+[data-theme="dark"] .leaves-search-icon {
+  color: #a1a8b5;
+}
+
+[data-theme="dark"] .leaves-search-input {
+  background-color: #2a3142;
+  border-color: #3a4255;
+  color: #e0e3e7;
+}
+
+[data-theme="dark"] .leaves-search-input:focus {
+  border-color: #4d9fec;
+  box-shadow: 0 0 0 2.0px rgba(77, 159, 236, 0.3);
+}
+
+[data-theme="dark"] .leaves-label {
+  color: #e0e3e7;
+}
+
+[data-theme="dark"] .leaves-select {
+  background-color: #2a3142;
+  border-color: #3a4255;
+  color: #e0e3e7;
+}
+
+[data-theme="dark"] .leaves-select:focus {
+  border-color: #4d9fec;
+  box-shadow: 0 0 0 2.0px rgba(77, 159, 236, 0.3);
+}
+
+[data-theme="dark"] .leaves-form-group input[type="date"],
+[data-theme="dark"] .leaves-form-group textarea {
+  background-color: #2a3142;
+  border-color: #3a4255;
+  color: #e0e3e7;
+}
+[data-theme="dark"] .leaves-form-group label {
+  color: white;
+}
+
+[data-theme="dark"] .leaves-form-group input[type="date"]:focus,
+[data-theme="dark"] .leaves-form-group textarea:focus {
+  border-color: #4d9fec;
+  box-shadow: 0 0 0 2.0px rgba(77, 159, 236, 0.3);
+}
+
+[data-theme="dark"] .leaves-submit-btn {
+  background-color: #27ae60;
+  color: #e0e3e7;
+}
+
+[data-theme="dark"] .leaves-submit-btn:hover {
+  background-color: #2ecc71;
+}
+
+[data-theme="dark"] .leaves-cancel-btn {
+  background-color: #2a3142;
+  color: #e0e3e7;
+  border-color: #3a4255;
+}
+
+[data-theme="dark"] .leaves-cancel-btn:hover {
+  background-color: #3a4255;
+}
+
+[data-theme="dark"] .leaves-message:not(.error) {
+  background-color: rgba(39, 174, 96, 0.1);
+  color: #2ecc71;
+}
+
+[data-theme="dark"] .leaves-message.error {
+  background-color: rgba(255, 107, 107, 0.1);
+  color: #ff6b6b;
+}
+
+/* Dark theme animations */
+@keyframes leavesFormFadeInDark {
+  from {
+    opacity: 0;
+    background-color: transparent;
+  }
+  to {
+    opacity: 1;
+    background-color: #1a1f2c;
+  }
+}
+
+[data-theme="dark"] .leaves-form-container {
+  animation: leavesFormFadeInDark 0.3s ease-out forwards;
+}
+
+/* Option styling for select dropdown */
+[data-theme="dark"] .leaves-select option {
+  background-color: #1a1f2c;
+  color: #e0e3e7;
+}
+
+/* Placeholder text color */
+[data-theme="dark"] .leaves-search-input::placeholder {
+  color: #7f8c8d;
+}
+
+/* Responsive adjustments for dark theme */
+@media (max-width: 41.1rem) {
+  [data-theme="dark"] .leaves-form-container {
+    background-color: #1a1f2c;
+  }
+}
+
+/* AddLeaveForm.css */
+
+.leaves-form-container {
+  max-width: 42.9rem;
+  margin: 1.60rem auto;
+  padding: 1.60rem;
+  background: #ffffff;
+  border-radius: 0.71rem;
+  box-shadow: 0 0.286rem 0.86rem rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.leaves-back-btn {
+  background: none;
+  border: none;
+  color: #4a6cf7;
+  font-size: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 0.357rem;
+  transition: background-color 0.2s;
+}
+
+.leaves-back-btn:hover {
+  background-color: #f5f7ff;
+}
+
+.leaves-title {
+  color: #2c3e50;
+  font-size: 1.20rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.leaves-subtitle {
+  color: #34495e;
+  font-size: 1.10rem;
+  margin: 1.5rem 0 1rem;
+  font-weight: 500;
+}
+
+.leaves-search-container {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.leaves-search-icon {
+  position: absolute;
+  left: 1.07rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #7f8c8d;
+}
+
+.leaves-search-input {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 2.5rem;
+  border: 1.0px solid #e0e6ed;
+  border-radius: 0.429rem;
+  font-size: 0.75rem;
+  transition: border-color 0.2s;
+}
+
+.leaves-search-input:focus {
+  outline: none;
+  border-color: #4a6cf7;
+  box-shadow: 0 0 0 2.0px rgba(74, 108, 247, 0.2);
+}
+
+.leaves-student-select-section {
+  margin-bottom: 1.5rem;
+}
+
+.leaves-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.leaves-select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1.0px solid #e0e6ed;
+  border-radius: 0.429rem;
+  font-size: 0.75rem;
+  background-color: white;
+  transition: border-color 0.2s;
+}
+
+.leaves-select:focus {
+  outline: none;
+  border-color: #4a6cf7;
+  box-shadow: 0 0 0 2.0px rgba(74, 108, 247, 0.2);
+}
+
+.leaves-form {
+  margin-top: 1.5rem;
+}
+
+.leaves-form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.leaves-form-group {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.leaves-form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.leaves-form-group input[type="date"],
+.leaves-form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1.0px solid #e0e6ed;
+  border-radius: 0.429rem;
+  font-size: 0.75rem;
+  transition: border-color 0.2s;
+}
+
+.leaves-form-group input[type="date"]:focus,
+.leaves-form-group textarea:focus {
+  outline: none;
+  border-color: #4a6cf7;
+  box-shadow: 0 0 0 2.0px rgba(74, 108, 247, 0.2);
+}
+
+.leaves-form-group textarea {
+  min-height: 5.4rem;
+  resize: vertical;
+}
+
+.leaves-form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.leaves-submit-btn {
+  background-color: #4a6cf7;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.429rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.leaves-submit-btn:hover {
+  background-color: #3a5ce4;
+}
+
+.leaves-cancel-btn {
+  background-color: #f5f7fa;
+  color: #2c3e50;
+  border: 1.0px solid #e0e6ed;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.429rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.leaves-cancel-btn:hover {
+  background-color: #ebf0f5;
+}
+
+.leaves-message {
+  padding: 0.8rem 1rem;
+  border-radius: 0.429rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.leaves-message:not(.error) {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.leaves-message.error {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+/* Responsive adjustments */
+@media (max-width: 41.1rem) {
+  .leaves-form-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .leaves-form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}

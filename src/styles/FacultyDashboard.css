@@ -1,0 +1,483 @@
+/* Dark Theme Styles */
+[data-theme="dark"] .faculty-dashboard-container {
+  background: #121212;
+}
+
+[data-theme="dark"] .faculty-main-content {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .faculty-sidebar {
+  background: linear-gradient(135deg, #0a0e3a 0%, #1a1c4d 100%);
+  box-shadow: 0.286rem 0 0.71rem rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .sidebar-header h3 {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .faculty-user-profile {
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .user-avatar {
+  background-color: #64b5f6;
+  color: #121212;
+}
+
+[data-theme="dark"] .user-name {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .user-role {
+  color: #b0b0b0;
+}
+
+[data-theme="dark"] .faculty-sidebar-list li a {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme="dark"] .faculty-sidebar-list li a:hover {
+  background: rgba(100, 181, 246, 0.15);
+  color: #ffffff;
+}
+
+[data-theme="dark"] .faculty-sidebar-list li.active a {
+  background: rgba(100, 181, 246, 0.3);
+  border-left-color: #64b5f6;
+}
+
+[data-theme="dark"] .sidebar-footer {
+  color: rgba(255, 255, 255, 0.6);
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive adjustments for dark theme */
+@media (max-width: 41.1rem) {
+  [data-theme="dark"] .faculty-sidebar-list li.active a {
+    border-bottom-color: #64b5f6;
+  }
+}
+
+/* Icon colors in dark theme */
+[data-theme="dark"] .nav-icon {
+  color: #b0b0b0;
+}
+
+[data-theme="dark"] .faculty-sidebar-list li.active .nav-icon,
+[data-theme="dark"] .faculty-sidebar-list li a:hover .nav-icon {
+  color: #ffffff;
+}
+
+/* Animation adjustments for dark theme */
+@keyframes slideInDark {
+  from {
+    opacity: 0;
+    transform: translateX(2.1rem);
+    background-color: rgba(30, 30, 30, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    background-color: #1e1e1e;
+  }
+}
+
+[data-theme="dark"] .faculty-main-content {
+  animation-name: slideInDark;
+}
+
+/* Ripple effect adjustment for dark theme */
+[data-theme="dark"] .faculty-sidebar-list a:active::after {
+  background: rgba(100, 181, 246, 0.3);
+}
+
+/* Active indicator glow for dark theme */
+[data-theme="dark"] .faculty-sidebar-list li.active::before {
+  background: #ffc107;
+  animation-name: glowDark;
+}
+
+@keyframes glowDark {
+  from {
+    box-shadow: 0.0px 0px 8px rgba(255, 193, 7, 0.5);
+  }
+  to {
+    box-shadow: 0.0px 0px 16px rgba(255, 193, 7, 0.9);
+  }
+}
+
+/* Mobile view adjustments */
+@media (min-width: 0.0px) and (max-width: 53.1rem) {
+  [data-theme="dark"] .faculty-sidebar {
+    background: #1a1c4d;
+  }
+  
+  [data-theme="dark"] .user-avatar {
+    background-color: #64b5f6;
+  }
+}
+[data-theme="dark"] .faculty-main-content {
+  background: #1a1f2c;
+}
+[data-theme="dark"] .faculty-dashboard-container {
+  background: #1a1f2c;
+}
+
+/* Faculty Dashboard Layout */
+.faculty-dashboard-container {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+
+/* Sidebar Styling */
+.faculty-sidebar {
+  width: 9rem;
+  background-color: #1B1A55;
+  color: white;
+  padding: 1.21rem;
+  box-shadow: 0.286rem 0 0.71rem rgba(0, 0, 0, 0.3);
+  transition: width 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Sidebar Collapsible */
+.faculty-sidebar.collapsed {
+  width: 4.3rem;
+  padding: 0.71rem;
+}
+
+/* Sidebar Expand Effect */
+.faculty-sidebar:hover {
+  width: 15rem;
+}
+
+/* Sidebar List */
+.faculty-sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.faculty-sidebar-list li {
+  margin-bottom: 1.00rem;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Sidebar Link Styling */
+.faculty-sidebar-list a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.71rem;
+  padding: 0.86rem 1.14rem;
+  border-radius: 0.429rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: background 0.3s ease-in-out, transform 0.2s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Sidebar Hover Effect */
+.faculty-sidebar-list a:hover {
+  background: linear-gradient(90deg, #f39c12, #e67e22);
+  transform: translateX(0.429rem);
+  box-shadow: 2.0px 2px 10px rgba(243, 156, 18, 0.5);
+}
+
+/* Active Sidebar Link */
+.faculty-sidebar-list li.active a {
+  background: #e67e22;
+  font-weight: bold;
+  box-shadow: 0.0px 0px 15px rgba(230, 126, 34, 0.6);
+}
+
+/* Sidebar Icons */
+.faculty-sidebar-list a i {
+  font-size: 1.00rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Animate Icons on Hover */
+.faculty-sidebar-list a:hover i {
+  transform: rotate(10deg);
+}
+
+/* Ripple Effect on Click */
+.faculty-sidebar-list a:active::after {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  transform: scale(0);
+  animation: ripple 0.5s ease-out forwards;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* Animated Active Indicator */
+.faculty-sidebar-list li.active::before {
+  content: "";
+  position: absolute;
+  left: -0.71rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.429rem;
+  height: 60%;
+  background: #f1c40f;
+  border-radius: 0.357rem;
+  animation: glow 1s infinite alternate;
+}
+
+/* Glow Animation for Active Indicator */
+@keyframes glow {
+  from {
+    box-shadow: 0.0px 0px 8px rgba(241, 196, 15, 0.5);
+  }
+  to {
+    box-shadow: 0.0px 0px 16px rgba(241, 196, 15, 0.9);
+  }
+}
+
+/* Main Content Area */
+.faculty-main-content {
+  flex: 1;
+  padding: 1.21rem;
+  overflow-y: auto;
+  background: white;
+  border-radius: 0.86rem;
+  margin: 1.21rem;
+  animation: slideIn 0.5s ease-in-out;
+  scrollbar-width: none;
+}
+
+/* Slide-in Animation for Main Content */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(2.1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Sidebar Toggle Button */
+.faculty-sidebar-toggle {
+  position: absolute;
+  top: 1.43rem;
+  right: -2.1rem;
+  background: #e67e22;
+  color: white;
+  border: none;
+  padding: 0.429rem 0.71rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2.0px 2px 10px rgba(230, 126, 34, 0.5);
+}
+
+.faculty-sidebar-toggle:hover {
+  background: #f39c12;
+}
+
+
+/* Faculty Dashboard Sidebar Styles */
+.faculty-sidebar {
+  width: 12.3rem;
+  background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+  color: white;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2.0px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+  padding: 1.5rem;
+  border-bottom: 1.0px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-header h3 {
+  margin: 0 0 1.5rem;
+  font-size: 1.10rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.faculty-user-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.user-avatar {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background-color: #4a6baf;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.90rem;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: 500;
+  font-size: 0.80rem;
+}
+
+.user-role {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  margin-top: 0.1rem;
+}
+
+.faculty-sidebar-list {
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0;
+  flex: 1;
+}
+
+.faculty-sidebar-list li {
+  margin: 0.25rem 0;
+}
+
+.faculty-sidebar-list li a {
+  display: flex;
+  align-items: center;
+  padding: 0.85rem 1.5rem;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-size: 0.80rem;
+}
+
+.faculty-sidebar-list li a:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+.faculty-sidebar-list li.active a {
+  background: rgba(74, 107, 175, 0.3);
+  color: white;
+  border-left: 0.286rem solid #4a6baf;
+}
+
+.nav-icon {
+  margin-right: 0.85rem;
+  width: 1.21rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.sidebar-footer {
+  padding: 1rem 1.5rem;
+  border-top: 1.0px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.app-version {
+  text-align: center;
+}
+
+/* Responsive sidebar */
+@media (max-width: 41.1rem) {
+  .faculty-sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .faculty-sidebar-list {
+    display: flex;
+    overflow-x: auto;
+    padding: 0.5rem;
+  }
+  
+  .faculty-sidebar-list li {
+    flex-shrink: 0;
+  }
+  
+  .faculty-sidebar-list li a {
+    padding: 0.75rem 1rem;
+  }
+  
+  .faculty-sidebar-list li.active a {
+    border-left: none;
+    border-bottom: 0.214rem solid #4a6baf;
+  }
+  
+  .nav-text {
+    display: none;
+  }
+  
+  .nav-icon {
+    margin-right: 0;
+    font-size: 0.90rem;
+  }
+}
+
+@media (min-width: 0.0px) and (max-width: 53.1rem) {
+  .faculty-sidebar {
+    width: 4.3rem;
+  }
+  
+  .sidebar-header h3, 
+  .user-info,
+  .nav-text {
+    display: none;
+  }
+  .user-info span {
+    display: none;
+  }
+  
+  .user-avatar {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: 0 auto;
+    border: 0.214rem solid red;
+  }
+  
+  .faculty-sidebar-list li a {
+    justify-content: center;
+    padding: 0.71rem 0;
+  }
+  
+  .nav-icon {
+    margin-right: 0;
+    font-size: 0.50rem;
+  }
+}
+
+
+

@@ -1,0 +1,24 @@
+/* Reset and General Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.00.6;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+[data-theme="dark"] body {
+  background: #1a1f2c;
+}

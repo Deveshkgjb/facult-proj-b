@@ -1,0 +1,424 @@
+
+/* Main Container */
+.add-user-container {
+  max-width: 64.3rem;
+  margin: 0 auto;
+  padding: 1.60rem;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  background-color: #f8fafc;
+  height: 72.0vh;
+}
+
+/* Back Button */
+.add-user-back-button {
+  background: none;
+  border: none;
+  color: #3498db;
+  font-size: 0.75rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 0.429rem;
+}
+
+.add-user-back-button:hover {
+  color: #2980b9;
+  background-color: rgba(52, 152, 219, 0.1);
+  transform: translateX(-0.214rem);
+}
+
+/* Form Title */
+.add-user-title {
+  color: #2c3e50;
+  margin-bottom: 1.8rem;
+  font-size: 1.20rem;
+  font-weight: 700;
+  border-bottom: 2.0px solid #f1f2f6;
+  padding-bottom: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.add-user-title::after {
+  content: '';
+  position: absolute;
+  bottom: -2.0px;
+  left: 0;
+  width: 4.3rem;
+  height: 2.0px;
+  background-color: #3498db;
+}
+
+/* Loading Indicator */
+.add-user-loading {
+  padding: 1.2rem;
+  background: #f8f9fa;
+  border-radius: 0.86rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #7f8c8d;
+  box-shadow: 0 2.0px 5px rgba(0, 0, 0, 0.05);
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+/* Messages */
+.add-user-message {
+  padding: 1.2rem;
+  border-radius: 0.86rem;
+  margin-bottom: 1.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.add-user-message-success {
+  background-color: rgba(212, 237, 218, 0.5);
+  color: #155724;
+  border-left: 0.286rem solid #28a745;
+}
+
+.add-user-message-error {
+  background-color: rgba(248, 215, 218, 0.5);
+  color: #721c24;
+  border-left: 0.286rem solid #dc3545;
+}
+
+/* Form Container */
+.add-user-form {
+  background: white;
+  border-radius: 1.14rem;
+  box-shadow: 0 0.71rem 2.1rem rgba(0, 0, 0, 0.08);
+  padding: 2.00rem;
+  transition: all 0.3s ease;
+  border: 1.0px solid rgba(0, 0, 0, 0.05);
+}
+
+.add-user-form:hover {
+  box-shadow: 0 0.86rem 2.9rem rgba(0, 0, 0, 0.12);
+}
+
+/* Form Grid */
+.add-user-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(21.4rem, 1fr));
+  gap: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+/* Form Groups */
+.add-user-form-group {
+  margin-bottom: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.add-user-form-group:hover {
+  transform: translateY(-2.0px);
+}
+
+.add-user-label {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  color: #34495e;
+  font-size: 0.80rem;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.add-user-input,
+.add-user-select {
+  width: 100%;
+  padding: 0.9rem 1.1rem;
+  border: 1.0px solid #dfe6e9;
+  border-radius: 0.71rem;
+  font-size: 0.75rem;
+  transition: all 0.3s ease;
+  background-color: #f8fafc;
+  color: #2c3e50;
+}
+
+.add-user-input:hover,
+.add-user-select:hover {
+  border-color: #a0b0c5;
+}
+
+.add-user-input:focus,
+.add-user-select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 0.214rem rgba(52, 152, 219, 0.2);
+  background-color: white;
+}
+
+/* Committee Section */
+.add-user-committee-group {
+  grid-column: span 2;
+}
+
+.add-user-search-container {
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+
+.add-user-search-input {
+  width: 100%;
+  max-width: 21.4rem;
+  padding: 0.9rem 1.1rem 0.9rem 2.5rem;
+  border: 1.0px solid #dfe6e9;
+  border-radius: 0.71rem;
+  font-size: 0.75rem;
+  transition: all 0.3s ease;
+  background-color: #f8fafc;
+}
+
+.add-user-search-input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 0.214rem rgba(52, 152, 219, 0.2);
+  background-color: white;
+  width: 100%;
+}
+
+.add-user-search-container::before {
+  content: "\f002";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a0aec0;
+}
+
+.add-user-committee-checkboxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17.9rem, 1fr));
+  gap: 1rem;
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 0.86rem;
+  border: 1.0px solid #e5e7eb;
+  max-height: 10.7rem;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #bdc3c7 #f1f1f1;
+  box-shadow: inset 0 2.0px 4px rgba(0, 0, 0, 0.03);
+}
+
+/* Scrollbar styling */
+.add-user-committee-checkboxes::-webkit-scrollbar {
+  width: 0.429rem;
+}
+
+.add-user-committee-checkboxes::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 0.71rem;
+}
+
+.add-user-committee-checkboxes::-webkit-scrollbar-thumb {
+  background: #bdc3c7;
+  border-radius: 0.71rem;
+  transition: background 0.3s ease;
+}
+
+.add-user-committee-checkboxes::-webkit-scrollbar-thumb:hover {
+  background: #95a5a6;
+}
+
+/* Ensure checkbox items don't overflow */
+.add-user-checkbox-item {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.5rem;
+  border-radius: 0.57rem;
+  transition: all 0.2s ease;
+}
+
+.add-user-checkbox-item:hover {
+  background-color: rgba(52, 152, 219, 0.1);
+}
+
+.add-user-checkbox {
+  width: 1.2rem;
+  height: 1.2rem;
+  accent-color: #3498db;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.add-user-checkbox:hover {
+  transform: scale(1.1);
+}
+
+.add-user-checkbox-label {
+  font-size: 0.80rem;
+  color: #2d3436;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.add-user-checkbox-label:hover {
+  color: #3498db;
+}
+
+.add-user-no-results {
+  padding: 1.2rem;
+  text-align: center;
+  color: #7f8c8d;
+  font-style: italic;
+  background: #f9fafb;
+  border-radius: 0.71rem;
+  border: 1.0px dashed #dfe6e9;
+}
+
+/* Submit Button */
+.add-user-submit-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.71rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 16.1rem;
+  margin: 1.5rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 0.286rem 0.429rem rgba(52, 152, 219, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.add-user-submit-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transition: all 0.6s ease;
+}
+
+.add-user-submit-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-0.214rem);
+  box-shadow: 0 0.429rem 0.86rem rgba(52, 152, 219, 0.3);
+}
+
+.add-user-submit-button:hover::before {
+  left: 100%;
+}
+
+.add-user-submit-button:active {
+  transform: translateY(-1.0px);
+  box-shadow: 0 0.214rem 0.57rem rgba(52, 152, 219, 0.2);
+}
+
+.add-user-submit-button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.add-user-submit-button:disabled::before {
+  display: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 53.1rem) {
+  .add-user-container {
+    padding: 1.5rem;
+  }
+  
+  .add-user-form {
+    padding: 1.60rem;
+  }
+}
+
+@media (max-width: 41.1rem) {
+  .add-user-form-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  
+  .add-user-committee-group {
+    grid-column: span 1;
+  }
+  
+  .add-user-form {
+    padding: 1.5rem;
+    border-radius: 0.86rem;
+  }
+  
+  .add-user-title {
+    font-size: 1.00rem;
+  }
+  
+  .add-user-search-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 25.7rem) {
+  .add-user-container {
+    padding: 1rem;
+  }
+  
+  .add-user-form {
+    padding: 1.2rem;
+    border-radius: 0.71rem;
+  }
+  
+  .add-user-committee-checkboxes {
+    grid-template-columns: 1fr;
+  }
+  
+  .add-user-label {
+    font-size: 0.75rem;
+  }
+  
+  .add-user-input,
+  .add-user-select,
+  .add-user-search-input {
+    padding: 0.8rem 1rem;
+    font-size: 0.80rem;
+  }
+  
+  .add-user-submit-button {
+    padding: 0.9rem 1.5rem;
+  }
+}
