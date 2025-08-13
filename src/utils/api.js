@@ -1,119 +1,119 @@
+// utils/api.js
 import axios from "axios";
 
-// Generic API request function
-export const apiRequest = async ({ endpoint, method = "GET", headers = {}, body = null, withCredentials = false }) => {
+// ✅ Load API base URL from environment variable
+// Example .env: VITE_API_URL=https://facult-proj-f.vercel.app/api/v1
+const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000/api/v1";
+
+// Generic API request function using axios
+export const apiRequest = async ({
+  endpoint,
+  method = "GET",
+  headers = {},
+  body = null,
+  withCredentials = false
+}) => {
   try {
     const config = {
-      url: endpoint,
+      url: `${BASE_URL}${endpoint}`,
       method,
       headers: {
         "Content-Type": "application/json",
         ...headers,
       },
-      withCredentials, // Include cookies if needed
+      withCredentials,
     };
 
     if (body) {
-      config.data = body; // Add request body for POST, PUT, etc.
+      config.data = body;
     }
 
     const response = await axios(config);
-
-    return response.data; // Return the response data
+    return response.data;
   } catch (error) {
-    // Throw a detailed error
     throw new Error(error.response?.data?.message || "An error occurred");
   }
 };
 
-
-
+// ✅ Login user
 export const loginUser = async ({ email, password }) => {
-  
-  const response = await fetch("/api/v1/user/login", {
+  const response = await fetch(`${BASE_URL}/user/login`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
+    credentials: "include", // important for cookies
     body: JSON.stringify({ email, password }),
   });
 
   if (!response.ok) {
-    const errorData = await response.json(); // Get error details if available        
-    
+    const errorData = await response.json();
     throw new Error(errorData.error || "Invalid credentials");
   }
 
-  const data = await response.json(); // Response should include token and user info
-
-  // Save the token to local storage or cookies (use HTTP-only cookies for better security)
+  const data = await response.json();
   localStorage.setItem("authToken", data.token);
-
-  return data.user; // Return user info for further use
+  return data.user;
 };
 
-
-
+// ✅ Check session
 export async function checkSession() {
-  
   try {
-    const response = await axios.get("/api/v1/user/check-session", {
-      withCredentials: true, // Ensure cookies are sent with the request
+    const response = await axios.get(`${BASE_URL}/user/check-session`, {
+      withCredentials: true,
     });
-    
-    return response.data; 
+    return response.data;
   } catch (error) {
     throw new Error(error.response?.data?.message || "Session validation failed");
   }
 }
 
-// utils/api.js
+// ✅ Signup user
 export async function signupUser({ name, email, password }) {
   try {
-    const response = await fetch('/api/signup', {
-      method: 'POST',
+    const response = await fetch(`${BASE_URL}/signup`, {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({ name, email, password }),
     });
 
     if (!response.ok) {
-      throw new Error('Signup failed');
+      throw new Error("Signup failed");
     }
 
-    return await response.json(); // Assuming the API returns the user object
+    return await response.json();
   } catch (error) {
     throw error;
   }
 }
 
-
-// Send forgot password request
+// ✅ Send forgot password request
 export async function sendPasswordReset(email) {
-  const response = await fetch("/api/v1/user/forgot-password", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email }),
+  const response = await fetch(`${BASE_URL}/user/forgot-password`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email }),
   });
 
   if (!response.ok) {
-      throw new Error("Failed to send reset email");
+    throw new Error("Failed to send reset email");
   }
 
   return await response.json();
 }
 
-// Reset password with token
+// ✅ Reset password
 export async function resetPassword(token, newPassword) {
-  const response = await fetch("/api/v1/user/reset-password", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ token, newPassword }),
+  const response = await fetch(`${BASE_URL}/user/reset-password`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ token, newPassword }),
   });
 
   if (!response.ok) {
-      throw new Error("Failed to reset password");
+    throw new Error("Failed to reset password");
   }
 
   return await response.json();
